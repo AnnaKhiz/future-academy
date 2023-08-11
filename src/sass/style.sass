@@ -4,11 +4,12 @@
 @import "fonts"
 
 //*
-	border: 1px solid red
+	border: 1px solid green
 .container-main
 	max-width: 1210px
 	margin: 0 auto
 	padding: 0 15px
+	position: relative
 
 body
 	background-color: $bg-gray
@@ -21,54 +22,82 @@ body
 		justify-content: space-between
 		align-items: center
 		&-logo
-				& svg
-					vertical-align: middle
-				&.blue
-						& svg path
-								fill: $color-dark-blue
-				&.white
-						& svg path
-								fill: $color-white
+			& svg
+				vertical-align: middle
+			&.blue
+				& svg path
+					fill: $color-dark-blue
+			&.white
+				& svg path
+					fill: $color-white
 		&-menu
-				display: flex
-				align-items: center
-				& li
-						@include link-header-menu
-						& svg
-								margin-right: 9px
+			display: flex
+			align-items: center
+			& li
+				@include link-header-menu
+				& svg
+					margin-right: 9px
 		&-contacts
+			display: flex
+			align-items: center
+			& li
+				@include link-header-menu
+				& svg:not(.arrow)
+					margin-right: 9px
+				& svg.arrow
+					margin-left: 9px
+				&.phone
+					font: 500 normal 1rem/1.625rem 'Montserrat'
+				&.underline
+					text-decoration: underline
+			&-link
 				display: flex
 				align-items: center
-				& li
-						@include link-header-menu
-						& svg:not(.arrow)
-								margin-right: 9px
-						& svg.arrow
-								margin-left: 9px
-						&.phone
-								font: 500 normal 1rem/1.625rem 'Montserrat'
-						&.underline
-								text-decoration: underline
-								position: relative
-						&:hover .header__container-contacts-submenu
-								display: block
-				&-submenu
-						display: none
-						width: 100%
+				position: relative
+				//padding: 26px 0
+				//border-bottom: 4px solid
+				//border-image: linear-gradient(90deg, #F7941D 0%, #27AAE1 100%) 1
+				& a:hover
+					&:after
+						content: ''
 						position: absolute
-						top: 7px
+						bottom: -44px
 						left: 0
-						z-index: 2
-						padding-top: 20px
-						& li
-								width: 100%
-								margin-right: 0
-								background-color: $color-white
-								border: 1px solid $bg-gray
-								& a
-										width: 100%
-										padding: 20px
-										text-decoration: none
-										@include link-header-menu
+						height: 4px
+						width: 190px
+						background: $color-blue-yellow-gradient
+						display: block
+			&-submenu
+				background: $color-white
+				max-width: 1195px
+				width: 100%
+				padding: 17px 29px 20px
+				position: absolute
+				top: 130%
+				left: 0
+				border-radius: 6px
+				@include colored-shadow
+				&-block
+					display: flex
+					justify-content: space-between
+					align-items: start
+					margin-bottom: 25px
+					& svg
+						cursor: pointer
+				&-flex
+					display: flex
+					column-gap: 20px
+					align-items: flex-start
+					& li:not(:last-of-type)
+						margin-bottom: 10px
+					& li a
+						@include text-parameters (400, .875rem, 1.75rem, $color-dark-blue)
+						&:hover
+							text-decoration: underline
+				&-label
+					@include label-text-medium
+
+
 						
-						
+.hidden
+	display: none

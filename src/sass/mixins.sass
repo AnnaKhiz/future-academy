@@ -81,6 +81,19 @@
       color: $color-white
       @include trans
 
+
+@mixin colored-shadow
+  &:before
+    content: ''
+    z-index: -1
+    inset: 1px
+    position: absolute
+    background: $color-blue-yellow-gradient
+    filter: blur(10px)
+    opacity: 0.6
+    @include trans
+
+
 @mixin button-shadow-regular //for button div
   display: inline-block
   background: $color-white

@@ -103,6 +103,7 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 1210px;
   margin: 0 auto;
   padding: 0 15px;
+  position: relative;
 }
 
 body {
@@ -171,37 +172,71 @@ body {
 }
 .header__container-contacts li.underline {
   text-decoration: underline;
+}
+.header__container-contacts-link {
+  display: flex;
+  align-items: center;
   position: relative;
 }
-.header__container-contacts li:hover .header__container-contacts-submenu {
+.header__container-contacts-link a:hover:after {
+  content: "";
+  position: absolute;
+  bottom: -44px;
+  left: 0;
+  height: 4px;
+  width: 190px;
+  background: linear-gradient(90deg, #F7941D 0%, #27AAE1 100%);
   display: block;
 }
 .header__container-contacts-submenu {
-  display: none;
+  background: #ffffff;
+  max-width: 1195px;
   width: 100%;
+  padding: 17px 29px 20px;
   position: absolute;
-  top: 7px;
+  top: 130%;
   left: 0;
-  z-index: 2;
-  padding-top: 20px;
+  border-radius: 6px;
 }
-.header__container-contacts-submenu li {
-  width: 100%;
-  margin-right: 0;
-  background-color: #ffffff;
-  border: 1px solid #F6F7F9;
+.header__container-contacts-submenu:before {
+  content: "";
+  z-index: -1;
+  inset: 1px;
+  position: absolute;
+  background: linear-gradient(90deg, #F7941D 0%, #27AAE1 100%);
+  filter: blur(10px);
+  opacity: 0.6;
+  transition: all 0.3s ease-in-out 0s;
 }
-.header__container-contacts-submenu li a {
-  width: 100%;
-  padding: 20px;
-  text-decoration: none;
+.header__container-contacts-submenu-block {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 25px;
 }
-.header__container-contacts-submenu li a:not(:last-of-type) {
-  margin-right: 40px;
+.header__container-contacts-submenu-block svg {
+  cursor: pointer;
 }
-.header__container-contacts-submenu li a a {
+.header__container-contacts-submenu-flex {
+  display: flex;
+  column-gap: 20px;
+  align-items: flex-start;
+}
+.header__container-contacts-submenu-flex li:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+.header__container-contacts-submenu-flex li a {
+  font: 400 normal 0.5 "Montserrat";
+  color: #00093C;
+}
+.header__container-contacts-submenu-flex li a:hover {
+  text-decoration: underline;
+}
+.header__container-contacts-submenu-label {
   color: #000000;
-  font: 500 normal 0.875rem/1.0625rem "Montserrat";
+  font: 700 normal 2.25rem/2.125rem "Montserrat";
+}
+
+.hidden {
+  display: none;
 }
