@@ -1,10 +1,54 @@
-
+@import "var"
+@import "mixins"
+@import "style-reset"
+@import "fonts"
 
 body
+	max-width: 500px
 	font-family: IBMPlexSerif
 	font-size: 50px
 	span
 		color: green
 		letter-spacing: 5px
+
+//.fi a
+
+	text-align: center
+	font-family: 'Montserrat'
+	font-size: 0.875rem
+	font-style: normal
+	font-weight: 500
+	line-height: normal
+	color: $color-black
+	display: block
+	padding: 17px 54px
+	//border: 5px solid
+
+
+	//border-image: $color-blue-yellow-gradient
+
 .fi
-	color: red
+	@include button-shadow-regular
+	//margin: auto
+	//max-width: fit-content
+	//background: $color-white
+	//position: relative
+	//border-radius: 6px
+	//&:before
+	//	content: ''
+	//	z-index: -1
+	//	inset: 1px
+	//	position: absolute
+	//	background: $color-blue-yellow-gradient
+	//	filter: blur(5px)
+	//	opacity: 0.3
+	//&:hover
+	//	&:before
+	//		transform: translate(10px, 10px)
+	//		filter: blur(20px)
+	//		opacity: 0.8
+	//& a
+	//	font: 500 normal 0.875rem/1.0625rem 'Montserrat'
+	//	color: $color-black
+	//	display: block
+	//	padding: 17px 54px

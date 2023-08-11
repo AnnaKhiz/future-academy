@@ -1,0 +1,31 @@
+@import "var"
+
+@mixin button-shadow-regular //for button div
+  max-width: fit-content
+  background: $color-white
+  position: relative
+  border-radius: 6px
+  &:before
+    content: ''
+    z-index: -1
+    inset: 1px
+    position: absolute
+    background: $color-blue-yellow-gradient
+    filter: blur(5px)
+    opacity: 0.3
+  &:hover
+    &:before
+      transform: translate(10px, 10px)
+      filter: blur(20px)
+      opacity: 0.8
+  &:active
+    background: var(--dark-blue, #00093C)
+    &:before
+      opacity: 0
+    & a
+      color: $color-white
+  & a
+    font: 500 normal 0.875rem/1.0625rem 'Montserrat'
+    color: $color-black
+    display: block
+    padding: 17px 54px
