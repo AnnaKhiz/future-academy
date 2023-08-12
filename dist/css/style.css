@@ -178,7 +178,7 @@ body {
   align-items: center;
   position: relative;
 }
-.header__container-contacts-link a:hover:after {
+.header__container-contacts-link.colored-line:after {
   content: "";
   position: absolute;
   bottom: -44px;
