@@ -54,19 +54,9 @@ body
 				display: flex
 				align-items: center
 				position: relative
-				//padding: 26px 0
-				//border-bottom: 4px solid
-				//border-image: linear-gradient(90deg, #F7941D 0%, #27AAE1 100%) 1
+				max-width: 195px
 				&.colored-line
-					&:after
-						content: ''
-						position: absolute
-						bottom: -44px
-						left: 0
-						height: 4px
-						width: 190px
-						background: $color-blue-yellow-gradient
-						display: block
+					@include line-gradient-pseudo (-44px, 0, 100%)
 			&-submenu
 				background: $color-white
 				max-width: 1195px
@@ -84,6 +74,8 @@ body
 					margin-bottom: 25px
 					& svg
 						cursor: pointer
+				&.hidden
+					display: none
 				&-flex
 					display: flex
 					column-gap: 20px
@@ -99,5 +91,3 @@ body
 
 
 						
-.hidden
-	display: none

@@ -124,6 +124,17 @@
   & a
     @include button-text-normal-color ($color-black)
 
+@mixin line-gradient-pseudo ($bot, $left, $width)
+  &:after
+    content: ''
+    position: absolute
+    bottom: -44px
+    left: 0
+    height: 4px
+    width: 100%
+    background: $color-blue-yellow-gradient
+    display: block
+
 
 
 
