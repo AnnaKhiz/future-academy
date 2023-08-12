@@ -63,11 +63,12 @@ body
 				width: 100%
 				padding: 17px 29px 20px
 				position: absolute
-				top: 130%
+				top: 128%
 				left: 0
 				border-radius: 6px
 				@include colored-shadow
 				&-block
+					z-index: 2
 					display: flex
 					justify-content: space-between
 					align-items: start
@@ -88,6 +89,78 @@ body
 							text-decoration: underline
 				&-label
 					@include label-text-medium
+
+
+.main
+	&__index
+		min-height: 480px
+		width: 100%
+		background-image: url("../img/slider-img-index.jpg")
+		background-position: right
+		position: relative
+		z-index: -2
+		&-banner
+			&-img
+				background: #00093C
+				width: 54%
+				&.first
+					height: 480px
+					background-image: url("../img/dot-banner.png")
+					background-repeat: round
+					padding: 126px 87px 151px 350px
+			&-text
+				max-width: 615px
+				overflow: hidden
+				position: absolute
+				top: 24%
+				left: 18%
+			&-label
+				@include text-parameters (700, 2.25rem, 2.75rem, $color-white)
+				margin-bottom: 26px
+				background-color: $color-dark-blue
+				display: inline-block
+				padding-bottom: 5px
+				&:last-of-type
+					margin-bottom: 41px
+			&-desc
+				@include text-parameters (500, 1.125rem, 1.5rem, $color-white)
+				background-color: $color-dark-blue
+				padding-bottom: 5px
+		&-icon
+			&-plus
+				position: absolute
+				top: 73px
+				left: 200px
+			&-left-line
+				position: absolute
+				bottom: -12px
+				left: 159px
+			&-triangle
+				position: absolute
+				bottom: 58px
+				left: 642px
+			&-circle
+				position: absolute
+				top: 35px
+				left: 960px
+			&-line-hor
+				position: absolute
+				top: 229px
+				left: 808px
+			&-line-ver
+				position: absolute
+				top: 120px
+				right: 689px
+			&-plus-small
+				position: absolute
+				top: 112px
+				right: 390px
+			&-right-line
+				position: absolute
+				bottom: -47px
+				right: 260px
+
+
 
 
 						

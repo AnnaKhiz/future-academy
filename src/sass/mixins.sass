@@ -3,9 +3,14 @@
 @mixin trans
   transition: all 0.3s ease-in-out 0s
 
+
 //text
 @mixin text-parameters ($bold, $fz, $lh, $color)
-  font: $bold normal $fz/$lh 'Montserrat'
+  font-weight: $bold
+  font-style: normal
+  font-family: 'Montserrat'
+  font-size: $fz
+  line-height: $lh
   color: $color
 
 @mixin link-header-menu
