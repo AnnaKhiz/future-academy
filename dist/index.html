@@ -5,7 +5,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="files/bootstrap.min.css" rel="stylesheet">
-	<script src="files/bootstrap.bundle.min.js"></script>
+	<script src="files/bootstrap.bundle.min.js" defer></script>
+<!--	<script-->
+<!--			src="https://code.jquery.com/jquery-3.7.0.min.js"-->
+<!--			integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="-->
+<!--			crossorigin="anonymous"></script>-->
 	<link rel="stylesheet" href="css/style.min.css">
 	<title>Главная</title>
 </head>
@@ -302,11 +306,31 @@
             </div>
         </div>
     </section>
+    <section class="main__index-video">
+        <div class="container-main">
+            <div class="main__index-video-container pseudo" id="index-video-container">
+                <img class="image-cover" src="img/vid-index.png" alt="image preview" id="index-video-cover">
+                <img class="play" src="img/play.png" alt="icon play" id="index-video-play">
+                <iframe id="video" width="780" height="436" src="https://www.youtube.com/embed/N3AkSS5hXMA?start=1"
+                        frameborder="0" allowtransparency="true" allowfullscreen allow="autoplay">
+                </iframe>
+                <img class="main__index-video-container-icon-triangle" src="img/icon-triangle-big.png" alt="icon">
+                <img class="main__index-video-container-icon-left-line" src="img/icon-video-line.png" alt="icon">
+                <img class="main__index-video-container-icon-right-line" src="img/icon-video-line-right.png" alt="icon">
+                <img class="main__index-video-container-icon-plus" src="img/icon-video-plus.png" alt="icon">
+            </div>
 
+        </div>
+
+
+
+
+    </section>
 
 
 </main>
     <footer>Footer</footer>
 <script src="js/app.min.js"></script>
+
 </body>
 </html>

@@ -161,7 +161,7 @@ body
 				bottom: -47px
 				right: 260px
 		&-professions
-			padding: 100px 0
+			padding-top: 100px
 			&-container
 				display: flex
 				column-gap: 40px
@@ -211,6 +211,71 @@ body
 							left: -40px
 					&.left
 						width: 100%
+		&-video
+			padding-bottom: 116px
+			text-align: center
+			&-container
+				position: relative
+				margin: 0 auto
+				max-width: 780px
+				border-radius: 20px
+				&.pseudo
+					&:before
+						content: ''
+						background-color: #00093C
+						opacity: 0.8
+						width: 780px
+						height: 436px
+						position: absolute
+						top: 0
+						left: 0
+						z-index: 2
+						pointer-events: none
+						cursor: pointer
+						border-radius: 20px
+				& img.image-cover
+					position: absolute
+					top: 0
+					left: 0
+					z-index: 1
+					pointer-events: none
+					cursor: pointer
+					&.hidden
+						display: none
+				& img.play
+					position: absolute
+					top: calc(50% - 54px)
+					left: calc(50% - 54px)
+					z-index: 3
+					cursor: pointer
+					&.hidden
+						display: none
+				& iframe
+					z-index: 0
+					border-radius: 20px
+				&-icon
+					&-triangle
+						position: absolute
+						top: -68px
+						left: -96px
+						z-index: -1
+					&-left-line
+						position: absolute
+						bottom: 24px
+						left: -266px
+						z-index: -1
+					&-right-line
+						position: absolute
+						top: -58px
+						right: -244px
+						z-index: -1
+					&-plus
+						position: absolute
+						bottom: -144px
+						right: -160px
+						z-index: -1
+
+
 
 
 

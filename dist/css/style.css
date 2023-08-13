@@ -336,7 +336,7 @@ body {
   right: 260px;
 }
 .main__index-professions {
-  padding: 100px 0;
+  padding-top: 100px;
 }
 .main__index-professions-container {
   display: flex;
@@ -452,4 +452,77 @@ body {
 }
 .main__index-professions-container-item.left {
   width: 100%;
+}
+.main__index-video {
+  padding-bottom: 116px;
+  text-align: center;
+}
+.main__index-video-container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 780px;
+  border-radius: 20px;
+}
+.main__index-video-container.pseudo:before {
+  content: "";
+  background-color: #00093C;
+  opacity: 0.8;
+  width: 780px;
+  height: 436px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  pointer-events: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.main__index-video-container img.image-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+  cursor: pointer;
+}
+.main__index-video-container img.image-cover.hidden {
+  display: none;
+}
+.main__index-video-container img.play {
+  position: absolute;
+  top: calc(50% - 54px);
+  left: calc(50% - 54px);
+  z-index: 3;
+  cursor: pointer;
+}
+.main__index-video-container img.play.hidden {
+  display: none;
+}
+.main__index-video-container iframe {
+  z-index: 0;
+  border-radius: 20px;
+}
+.main__index-video-container-icon-triangle {
+  position: absolute;
+  top: -68px;
+  left: -96px;
+  z-index: -1;
+}
+.main__index-video-container-icon-left-line {
+  position: absolute;
+  bottom: 24px;
+  left: -266px;
+  z-index: -1;
+}
+.main__index-video-container-icon-right-line {
+  position: absolute;
+  top: -58px;
+  right: -244px;
+  z-index: -1;
+}
+.main__index-video-container-icon-plus {
+  position: absolute;
+  bottom: -144px;
+  right: -160px;
+  z-index: -1;
 }
