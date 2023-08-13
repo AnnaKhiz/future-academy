@@ -5,6 +5,7 @@
 
 //*
 	border: 1px solid green
+	box-sizing: border-box
 .container-main
 	max-width: 1210px
 	margin: 0 auto
@@ -93,13 +94,13 @@ body
 
 .main
 	&__index
-		min-height: 480px
-		width: 100%
-		background-image: url("../img/slider-img-index.jpg")
-		background-position: right
-		position: relative
-		z-index: -2
 		&-banner
+			min-height: 480px
+			width: 100%
+			background-image: url("../img/slider-img-index.jpg")
+			background-position: right
+			position: relative
+			z-index: -2
 			&-img
 				background: #00093C
 				width: 54%
@@ -159,6 +160,57 @@ body
 				position: absolute
 				bottom: -47px
 				right: 260px
+		&-professions
+			padding: 100px 0
+			&-container
+				display: flex
+				column-gap: 40px
+				align-items: start
+				&-item
+					& li.tab:not(:last-of-type)
+						margin-right: 145px
+					& li.tab > .active
+						position: relative
+						@include line-gradient-pseudo (0, 0, 100%)
+					&-flex
+						display: flex
+						justify-content: center
+						align-items: center
+						column-gap: 16px
+						cursor: pointer
+						padding-bottom: 20px
+					&-img
+						max-width: 50px
+						& img
+							width: 100%
+							height: auto
+							object-fit: contain
+							overflow: hidden
+					&-label
+						@include text-parameters (700, 1rem, 1.25rem, $color-black)
+						margin-bottom: 0
+					&-desc
+						@include text-parameters (400, 0.75rem, 0.9375rem, $color-black)
+						margin-bottom: 0
+					&-tab
+						padding: 40px 0 218px 0
+						&-nav
+							&-list
+								display: flex
+								margin-bottom: 20px
+								padding-left: 0
+								& li
+									@include button-shadow-regular
+									margin-right: 20px
+					&.owl
+						position: relative
+						&:before
+							content: url("../img/owl-index.png")
+							position: absolute
+							top: 168px
+							left: -40px
+					&.left
+						width: 100%
 
 
 

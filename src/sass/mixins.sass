@@ -33,14 +33,14 @@
   color: $color-white
   font: 400 normal 0.875rem/1.0625rem 'Montserrat'
 
-@mixin button-text-normal-color ($color)
+@mixin button-text-normal-color ($color, $top, $sides)
   font: 500 normal 0.875rem/1.0625rem 'Montserrat'
   color: $color
   display: block
-  padding: 17px 54px
+  padding: $top $sides
 
 @mixin text-card-name
-  font: 400 normal 0.75rem/0.9375rem 'Montserrat'
+  font: 400 normal 0.75rem/0.9375rem 'Montserrat' //12px/15px
   margin-bottom: 18px
 
 @mixin text-card-label
@@ -127,13 +127,13 @@
       color: $color-white
       @include trans
   & a
-    @include button-text-normal-color ($color-black)
+    @include button-text-normal-color ($color-black, 16px, 20px)
 
 @mixin line-gradient-pseudo ($bot, $left, $width)
   &:after
     content: ''
     position: absolute
-    bottom: -44px
+    bottom: $bot
     left: 0
     height: 4px
     width: 100%

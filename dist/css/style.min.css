@@ -25,7 +25,6 @@ nav, footer, header, aside {
 html, body {
   height: 100%;
   width: 100%;
-  font-size: 100%;
   line-height: 1;
   font-size: 16px;
   -ms-text-size-adjust: 100%;
@@ -246,7 +245,7 @@ body {
   font: 700 normal 2.25rem/2.125rem "Montserrat";
 }
 
-.main__index {
+.main__index-banner {
   min-height: 480px;
   width: 100%;
   background-image: url("../img/slider-img-index.jpg");
@@ -335,4 +334,122 @@ body {
   position: absolute;
   bottom: -47px;
   right: 260px;
+}
+.main__index-professions {
+  padding: 100px 0;
+}
+.main__index-professions-container {
+  display: flex;
+  column-gap: 40px;
+  align-items: start;
+}
+.main__index-professions-container-item li.tab:not(:last-of-type) {
+  margin-right: 145px;
+}
+.main__index-professions-container-item li.tab > .active {
+  position: relative;
+}
+.main__index-professions-container-item li.tab > .active:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(90deg, #F7941D 0%, #27AAE1 100%);
+  display: block;
+}
+.main__index-professions-container-item-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 16px;
+  cursor: pointer;
+  padding-bottom: 20px;
+}
+.main__index-professions-container-item-img {
+  max-width: 50px;
+}
+.main__index-professions-container-item-img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  overflow: hidden;
+}
+.main__index-professions-container-item-label {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Montserrat";
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #000000;
+  margin-bottom: 0;
+}
+.main__index-professions-container-item-desc {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Montserrat";
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+  color: #000000;
+  margin-bottom: 0;
+}
+.main__index-professions-container-item-tab {
+  padding: 40px 0 218px 0;
+}
+.main__index-professions-container-item-tab-nav-list {
+  display: flex;
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+.main__index-professions-container-item-tab-nav-list li {
+  display: inline-block;
+  background: #ffffff;
+  position: relative;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+.main__index-professions-container-item-tab-nav-list li:before {
+  content: "";
+  z-index: -1;
+  inset: 1px;
+  position: absolute;
+  background: linear-gradient(90deg, #F7941D 0%, #27AAE1 100%);
+  filter: blur(5px);
+  opacity: 0.3;
+  transition: all 0.3s ease-in-out 0s;
+}
+.main__index-professions-container-item-tab-nav-list li:hover:before {
+  transition: all 0.3s ease-in-out 0s;
+  transform: translate(10px, 10px);
+  filter: blur(20px);
+  opacity: 0.8;
+}
+.main__index-professions-container-item-tab-nav-list li:active {
+  background: var(--dark-blue, #00093C);
+}
+.main__index-professions-container-item-tab-nav-list li:active:before {
+  opacity: 0;
+}
+.main__index-professions-container-item-tab-nav-list li:active a {
+  color: #ffffff;
+  transition: all 0.3s ease-in-out 0s;
+}
+.main__index-professions-container-item-tab-nav-list li a {
+  font: 500 normal 0.875rem/1.0625rem "Montserrat";
+  color: #000000;
+  display: block;
+  padding: 16px 20px;
+}
+.main__index-professions-container-item.owl {
+  position: relative;
+}
+.main__index-professions-container-item.owl:before {
+  content: url("../img/owl-index.png");
+  position: absolute;
+  top: 168px;
+  left: -40px;
+}
+.main__index-professions-container-item.left {
+  width: 100%;
 }
