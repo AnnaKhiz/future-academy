@@ -275,6 +275,7 @@ body
 						right: -160px
 						z-index: -1
 		&-statistic
+			padding-bottom: 82px
 			&-label
 				margin-bottom: 43px
 				max-width: 750px
@@ -282,8 +283,11 @@ body
 				@include text-parameters (700, 1.5rem, 2.125rem, $color-black)
 			&-container
 				display: flex
+				column-gap: 120px
+				justify-content: flex-start
+				align-items: start
 				&-item
-					width: 30%
+					width: fit-content
 					&-digit
 						@include text-parameters (700, 5.375rem, 6.5625rem, $color-white)
 						letter-spacing: 8.17px
@@ -297,6 +301,8 @@ body
 						&.third
 							position: relative
 							@include colored-border-text ('14 795')
+					&-desc
+						@include text-parameters (500, 1.125rem, 2.125rem, $color-black)
 
 
 

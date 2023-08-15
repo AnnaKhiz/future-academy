@@ -526,6 +526,9 @@ body {
   right: -160px;
   z-index: -1;
 }
+.main__index-statistic {
+  padding-bottom: 82px;
+}
 .main__index-statistic-label {
   margin-bottom: 43px;
   max-width: 750px;
@@ -539,9 +542,12 @@ body {
 }
 .main__index-statistic-container {
   display: flex;
+  column-gap: 120px;
+  justify-content: flex-start;
+  align-items: start;
 }
 .main__index-statistic-container-item {
-  width: 30%;
+  width: fit-content;
 }
 .main__index-statistic-container-item-digit {
   font-weight: 700;
@@ -606,4 +612,12 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   filter: blur(2px);
+}
+.main__index-statistic-container-item-desc {
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Montserrat";
+  font-size: 1.125rem;
+  line-height: 2.125rem;
+  color: #000000;
 }
