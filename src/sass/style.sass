@@ -147,7 +147,7 @@ body
 			&-line-hor
 				position: absolute
 				top: 229px
-				left: 808px
+				left: 791px
 			&-line-ver
 				position: absolute
 				top: 120px
@@ -308,20 +308,115 @@ body
 			&-container
 				display: grid
 				grid-template-columns: repeat(3, 1fr)
-				grid-template-rows: repeat(3, 1fr)
+				grid-template-rows: repeat(3, auto)
 				grid-column-gap: 20px
 				grid-row-gap: 20px
 				&-item
+					border-radius: 20px
 					&.one
 						grid-area: 1 / 1 / 2 / 4
+						background-color: $color-dark-orange
+						padding: 30px 40px 23px
+						position: relative
+						@include colored-shadow
 					&.two
 						grid-area: 2 / 1 / 4 / 2
+						background-color: $color-violet
+						padding: 34px 40px 50px
+						position: relative
+						@include colored-shadow
 					&.three
 						grid-area: 2 / 2 / 3 / 3
+						background-color: $color-light-green
+						padding: 34px 20px 46px 20px
+						position: relative
+						@include colored-shadow
 					&.four
 						grid-area: 2 / 3 / 3 / 4
+						background-color: $color-pink
+						padding: 34px 20px 46px 20px
+						position: relative
+						@include colored-shadow
 					&.five
 						grid-area: 3 / 2 / 4 / 4
+						background-color: $color-yellow
+						padding: 58px 80px 58px 50px
+						position: relative
+						@include colored-shadow
+					&-flex
+						display: flex
+						align-items: center
+						justify-content: space-between
+						&-date
+							& svg.day
+								margin-bottom: 13px
+								display: block
+						&-desc
+							max-width: 585px
+							overflow: hidden
+							&-label
+								@include text-parameters (500, 2.25rem, 1.625rem, $color-black)
+								margin-bottom: 29px
+							&-text
+								@include text-parameters (400, 1.125rem, 1.625rem, $color-black)
+						&-button
+							vertical-align: middle
+							& a
+								@include button-text-normal-color ($color-black, 17px, 61px)
+								border-radius: 10px
+								border: 2px solid $color-black
+					&-block
+						text-align: center
+						&-image
+							margin-bottom: 37px
+						&-label
+							@include text-parameters (500, 1.5rem, 1.625rem, $color-black)
+							margin-bottom: 41px
+							max-width: 400px
+							overflow: hidden
+						&-desc
+							@include text-parameters (400, 1rem, 1.5rem, $color-black)
+							max-width: 400px
+							overflow: hidden
+							margin-bottom: 49px
+						&-button
+							& a
+								@include button-text-normal-color ($color-black, 17px, 61px)
+								border-radius: 10px
+								border: 2px solid $color-black
+					&-news
+						text-align: center
+						&-image
+							display: inline-block
+							margin-bottom: 46px
+						&-label a
+							@include text-parameters (500, 1.5rem, 1.625rem, $color-black)
+					&-it
+						text-align: center
+						&-image
+							display: inline-block
+							margin-bottom: 46px
+						&-label a
+							@include text-parameters (500, 1.5rem, 1.625rem, $color-black)
+					&-try
+						display: flex
+						column-gap: 52px
+						align-items: center
+						&-block
+							&-label
+								@include text-parameters (500, 1.5rem, 1.625rem, $color-black)
+								margin-bottom: 30px
+								display: block
+								&:hover
+									color: $color-black
+							&-desc
+								@include text-parameters (400, 1rem, 1.5rem, $color-black)
+								max-width: 400px
+								overflow: hidden
+
+
+
+
 
 
 
