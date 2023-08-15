@@ -621,3 +621,28 @@ body {
   line-height: 2.125rem;
   color: #000000;
 }
+.main__index-grid {
+  padding-bottom: 100px;
+}
+.main__index-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.main__index-grid-container-item.one {
+  grid-area: 1/1/2/4;
+}
+.main__index-grid-container-item.two {
+  grid-area: 2/1/4/2;
+}
+.main__index-grid-container-item.three {
+  grid-area: 2/2/3/3;
+}
+.main__index-grid-container-item.four {
+  grid-area: 2/3/3/4;
+}
+.main__index-grid-container-item.five {
+  grid-area: 3/2/4/4;
+}
