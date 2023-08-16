@@ -413,7 +413,44 @@ body
 								@include text-parameters (400, 1rem, 1.5rem, $color-black)
 								max-width: 400px
 								overflow: hidden
-
+		&-feedback
+			&-block
+				background-color: $color-white
+				border-radius: 20px
+				padding: 20px
+				max-width: 280px
+			&-flex
+				display: flex
+				justify-content: space-between
+				align-items: start
+				column-gap: 10px
+				margin-bottom: 9px
+				&-image
+					max-width: 200px
+					& img
+						width: 100%
+						object-fit: contain
+				&-info
+					&-name
+						@include text-parameters (700, 0.875rem, 1.0625rem, $color-black)
+						margin-bottom: 8px
+					&-course
+						@include text-parameters (500, 0.75rem, 0.9375rem, $color-dark-grey)
+			&-text
+				@include text-parameters (500, 0.875rem, 1.375rem, $color-black)
+				margin-bottom: 10px
+			&-rating
+				display: flex
+				justify-content: flex-start
+				align-items: center
+				column-gap: 8px
+				&-star
+					max-width: 22px
+					& img
+						width: 100%
+						object-fit: contain
+				&-score
+					@include text-parameters (500, 0.875rem, 1.375rem, $color-dark-grey)
 
 
 
