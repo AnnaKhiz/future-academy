@@ -857,6 +857,38 @@ body {
   max-width: 400px;
   overflow: hidden;
 }
+.main__index-feedback {
+  padding: 62px 0 90px;
+  background: #00093C;
+  position: relative;
+  text-align: center;
+  margin-bottom: 85px;
+}
+.main__index-feedback:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../img/dot-banner.png");
+  background-repeat: round;
+  height: fit-content;
+  width: 100%;
+  min-height: 580px;
+}
+.main__index-feedback-label {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Montserrat";
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  color: #ffffff;
+  margin-bottom: 44px;
+  background-color: #00093C;
+  text-align: center;
+  padding-bottom: 5px;
+  position: relative;
+  display: inline-block;
+}
 .main__index-feedback-block {
   background-color: #ffffff;
   border-radius: 20px;
@@ -923,4 +955,53 @@ body {
   font-size: 0.875rem;
   line-height: 1.375rem;
   color: #4F4F4F;
+}
+.main__index-feedback-swiper {
+  width: 100%;
+  height: fit-content;
+}
+.main__index-feedback-swiper-wraper {
+  margin-left: -150px;
+  text-align: left;
+}
+.main__index-feedback-swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__index-feedback-swiper-scrollbar {
+  max-width: 1170px;
+  background-color: #ffffff;
+}
+.main__index-feedback-swiper-scrollbar div.swiper-horizontal > .swiper-scrollbar, .main__index-feedback-swiper-scrollbar.swiper-scrollbar-horizontal {
+  left: calc(50% - 585px);
+  bottom: 32px;
+}
+.main__index-feedback-swiper-scrollbar > div.swiper-scrollbar-drag {
+  background: linear-gradient(90deg, #F7941D 0%, #27AAE1 100%);
+}
+.main__index-feedback-icon-left-line {
+  position: absolute;
+  bottom: 63px;
+  left: -5px;
+}
+.main__index-feedback-icon-plus {
+  position: absolute;
+  top: 50px;
+  left: 291px;
+}
+.main__index-feedback-icon-triangle {
+  position: absolute;
+  bottom: 130px;
+  left: 930px;
+}
+.main__index-feedback-icon-top-line {
+  position: absolute;
+  top: -12px;
+  right: 301px;
+}
+.main__index-feedback-icon-circle {
+  position: absolute;
+  bottom: 71px;
+  right: 289px;
 }
