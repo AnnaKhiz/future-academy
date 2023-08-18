@@ -862,7 +862,6 @@ body {
   background: #00093C;
   position: relative;
   text-align: center;
-  margin-bottom: 85px;
 }
 .main__index-feedback:before {
   content: "";
@@ -1004,4 +1003,19 @@ body {
   position: absolute;
   bottom: 71px;
   right: 289px;
+}
+.main__index-preferences {
+  padding: 85px 0 358px;
+}
+.main__index-preferences-label {
+  color: #000000;
+  font: 700 normal 2.25rem/2.125rem "Montserrat";
+  margin-bottom: 60px;
+}
+.main__index-preferences-container {
+  display: flex;
+  align-items: start;
+}
+.main__index-preferences-container-item {
+  width: 25%;
 }
