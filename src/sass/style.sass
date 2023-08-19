@@ -511,6 +511,7 @@ body
 					position: absolute
 					bottom: 71px
 					right: 289px
+
 		&-preferences
 			padding: 85px 0 358px
 			&-label
@@ -521,9 +522,76 @@ body
 				align-items: start
 				&-item
 					width: 25%
+					& svg
+						margin-bottom: 20px
+					&-desc
+						@include text-parameters (500, 1.125rem, 1.625rem, $color-black)
+						overflow: hidden
 
-
-
+.footer
+	background-color: $color-dark-blue
+	&__container
+		padding: 70px 0 56px
+		display: flex
+		justify-content: space-between
+		align-items: start
+		&-item
+			&-logo
+				margin-bottom: 43px
+				display: block
+				@include trans
+				position: relative
+				&:hover
+					filter: drop-shadow(2px 2px 3px rgba(76, 107, 255, 1))
+					@include trans
+			&-link
+				@include text-parameters (600, 1.125rem, 1.625rem, $color-white)
+				margin-bottom: 12px
+				display: block
+				@include trans
+				&:hover
+					text-decoration: underline
+					color: $color-white
+					@include trans
+			&-address
+				@include text-parameters (500, 0.875rem, 1.625rem, $color-white)
+				margin-bottom: 12px
+			&-email
+				@include text-parameters (500, 0.875rem, 1.625rem, $color-white)
+				display: block
+				margin-bottom: 38px
+				@include trans
+				&:hover
+					text-decoration: underline
+					color: $color-white
+					@include trans
+			&-social
+				display: flex
+				align-items: center
+				justify-content: space-between
+				column-gap: 20px
+				margin-bottom: 30px
+				@include trans
+				&-icon
+					&:hover
+						@include trans
+						filter: drop-shadow(2px 2px 3px rgba(76, 107, 255, 1))
+			&-copyright
+				@include text-parameters (400, 0.75rem, 0.9375rem, $color-white)
+			&-label
+				@include text-parameters (700, 1rem, 1.625rem, $color-white)
+				margin-bottom: 16px
+			& li
+				& a
+					@include text-parameters (400, 0.875rem, 2.125rem, $color-white)
+					@include trans
+					&:hover
+						text-decoration: underline
+						@include trans
+			& li:not(:last-of-type)
+				margin-bottom: 8px
+			&.contacts
+				align-self: center
 
 
 
