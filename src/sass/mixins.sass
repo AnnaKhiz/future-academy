@@ -60,6 +60,7 @@
   background: $color-orange
   text-align: center
   display: inline-block
+  border-radius: 6px
   @include trans
   & a
     border-radius: 6px
@@ -159,6 +160,11 @@
 @mixin dotted-background
   background-image: url("../img/dot-banner.png")
   background-repeat: round
+
+@mixin input-style
+  background: $input-bg
+  border-radius: 6px
+  padding: 16px 18px 19px
 
 
 
