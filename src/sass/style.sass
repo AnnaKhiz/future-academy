@@ -2,6 +2,10 @@
 @import "mixins"
 @import "style-reset"
 @import "fonts"
+@import "burger"
+
+//*
+	overflow-x: hidden
 
 //*
 	border: 1px solid green
@@ -22,6 +26,8 @@ body
 		display: flex
 		justify-content: space-between
 		align-items: center
+		@media screen and (max-width: 1080px)
+			display: block
 		&-logo
 			& svg
 				vertical-align: middle
@@ -31,9 +37,15 @@ body
 			&.white
 				& svg path
 					fill: $color-white
+			@media screen and (max-width: 1080px)
+				margin-bottom: 15px
 		&-menu
 			display: flex
 			align-items: center
+			@media screen and (max-width: 1080px)
+				margin-bottom: 15px
+			@media screen and (max-width: 768px)
+				display: none
 			& li
 				@include link-header-menu
 				& svg
@@ -41,6 +53,8 @@ body
 		&-contacts
 			display: flex
 			align-items: center
+			@media screen and (max-width: 768px)
+				display: none
 			& li
 				@include link-header-menu
 				& svg:not(.arrow)
@@ -58,6 +72,9 @@ body
 				max-width: 195px
 				&.colored-line
 					@include line-gradient-pseudo (-44px, 0, 100%)
+				&.burger__list-menu-submenu-link
+					max-width: 100%
+					width: 100%
 			&-submenu
 				background: $color-white
 				max-width: 1195px
@@ -68,6 +85,9 @@ body
 				left: 0
 				border-radius: 6px
 				@include colored-shadow
+				&.burger-submenu
+					height: 43vh
+
 				&-block
 					z-index: 2
 					display: flex
@@ -82,8 +102,21 @@ body
 					display: flex
 					column-gap: 20px
 					align-items: flex-start
+					@media screen and (max-width: 980px)
+						display: block
+					& li
+						&:not(:last-of-type)
+							margin-bottom: 10px
+						@media screen and (max-width: 980px)
+						&:last-of-type
+							margin-bottom: 10px
+				&-list
 					& li:not(:last-of-type)
-						margin-bottom: 10px
+						@media screen and (max-width: 980px)
+							margin-right: 0
+					&:last-of-type li:last-of-type
+						margin-bottom: 0
+
 					& li a
 						@include text-parameters (400, .875rem, 1.75rem, $color-dark-blue)
 						&:hover
@@ -129,36 +162,36 @@ body
 		&-icon
 			&-plus
 				position: absolute
-				top: 73px
-				left: 200px
+				top: 16%
+				left: 11%
 			&-left-line
 				position: absolute
-				bottom: -12px
-				left: 159px
+				bottom: -3%
+				left: 8%
 			&-triangle
 				position: absolute
-				bottom: 58px
-				left: 642px
+				bottom: 12%
+				left: 34%
 			&-circle
 				position: absolute
-				top: 35px
-				left: 960px
+				top: 8%
+				left: 50%
 			&-line-hor
 				position: absolute
-				top: 229px
-				left: 791px
+				top: 48%
+				left: 41.5%
 			&-line-ver
 				position: absolute
-				top: 120px
-				right: 689px
+				top: 25%
+				right: 36%
 			&-plus-small
 				position: absolute
-				top: 112px
-				right: 390px
+				top: 21%
+				right: 21%
 			&-right-line
 				position: absolute
-				bottom: -47px
-				right: 260px
+				bottom: -7%
+				right: 14%
 		&-professions
 			padding-top: 100px
 			&-container
@@ -255,23 +288,23 @@ body
 				&-icon
 					&-triangle
 						position: absolute
-						top: -68px
-						left: -96px
+						top: -16%
+						left: -12%
 						z-index: -1
 					&-left-line
 						position: absolute
-						bottom: 24px
-						left: -266px
+						bottom: 5%
+						left: -32%
 						z-index: -1
 					&-right-line
 						position: absolute
-						top: -58px
-						right: -244px
+						top: -9%
+						right: -31%
 						z-index: -1
 					&-plus
 						position: absolute
-						bottom: -144px
-						right: -160px
+						bottom: -38%
+						right: -20%
 						z-index: -1
 		&-statistic
 			padding-bottom: 82px
@@ -493,24 +526,24 @@ body
 			&-icon
 				&-left-line
 					position: absolute
-					bottom: 63px
-					left: -5px
+					bottom: 10%
+					left: 0%
 				&-plus
 					position: absolute
-					top: 50px
-					left: 291px
+					top: 8%
+					left: 22%
 				&-triangle
 					position: absolute
-					bottom: 130px
-					left: 930px
+					bottom: 22%
+					left: 49%
 				&-top-line
 					position: absolute
-					top: -12px
-					right: 301px
+					top: -3%
+					right: 16%
 				&-circle
 					position: absolute
-					bottom: 71px
-					right: 289px
+					bottom: 13%
+					right: 14%
 		&-preferences
 			padding: 85px 0 358px
 			&-label

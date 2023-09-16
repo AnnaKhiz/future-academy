@@ -1,0 +1,112 @@
+@import "var"
+@import "mixins"
+
+.burger
+	z-index: 3
+	position: fixed
+	transition: all 0.5s ease-in 0s
+	&__container
+		transition: all 0.5s ease-out 0s
+		width: 100%
+		transform: translateY(-100%)
+		height: 100%
+		max-width: 100%
+		opacity: 0
+		pointer-events: none
+		position: fixed
+		left: 0%
+		top: 126px
+		overflow: hidden
+		padding: 33px 10px 55px
+		background: white
+	&.show .burger__container
+		opacity: 1
+		transform: translateY(0)
+		pointer-events: initial
+		transition: all 0.5s ease-out 0s
+		height: 100vh
+	//&__item a
+		//@include textSmallBold (1.5rem, 1.8125rem, black)
+		text-align: center
+		display: block
+		padding: 15px 0
+	//&__item a:hover, &__item a:active
+		color: black
+	//&.show
+	//	left: 0
+	&__list-menu
+		display: none
+		@media screen and (max-width: 780px)
+			display: block
+			margin-bottom: 27px
+		& li
+			display: flex
+			align-items: center
+			&:not(:last-of-type)
+				margin-right: 40px
+			& a
+				color: $color-black
+				font: 500 normal 0.875rem/1.0625rem 'Montserrat'
+			& svg
+				margin-right: 9px
+		& li:first-of-type
+			margin-bottom: 27px
+		& li:not(:first-of-type)
+			margin-bottom: 15px
+		& li.burger-underline
+			margin-bottom: 33px
+		&-block
+			overflow: auto
+			height: 40vh
+		& li.enter
+			margin-bottom: 50px
+
+
+
+
+.menu__btn
+	z-index: 23
+	position: absolute
+	right: 20px
+	top: 24px
+	width: 40px
+	height: 40px
+	overflow: hidden
+	display: none
+	@media screen and (max-width: 768px)
+		display: block
+	& span
+		width: 40px
+		height: 2px
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		background-color: $color-white
+		transition: all 0.5s ease-in-out 0s
+		&:nth-of-type(2)
+			top: calc(50% - 10px)
+		&:nth-of-type(3)
+			top: calc(50% + 10px)
+		&:nth-of-type(1)
+			width: 30px
+			left: 60%
+	&.active span:nth-of-type(1)
+		display: none
+	&.active span:nth-of-type(2)
+		top: 50%
+		transform: translate(-50%, 0%) rotate(45deg)
+		background-color: $color-white
+	&.active span:nth-of-type(3)
+		top: 50%
+		transform: translate(-50%, 0%) rotate(-45deg)
+		background-color: $color-white
+.fixed
+	overflow: hidden
+	width: 100%
+
+#menu__toggle
+	opacity: 0
+
+.scroll
+	overflow: auto

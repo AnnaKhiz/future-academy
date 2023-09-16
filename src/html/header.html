@@ -1,8 +1,8 @@
-<header class="header">
+<header class="header" id="header">
     <div class="container-main">
         <div class="header__container">
             <div class="header__container-logo @@color">
-                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="71" viewBox="0 0 100 71" fill="none">
+                <svg id="logo-img" xmlns="http://www.w3.org/2000/svg" width="100" height="71" viewBox="0 0 100 71" fill="none">
                     <path d="M16.4671 70.6464C7.38524 70.6464 0 63.2611 0 54.1793C0 45.0974 7.38524 37.7122 16.4671 37.7122C25.549 37.7122 32.9342 45.0974 32.9342 54.1793C32.9342 63.311 25.549 70.6464 16.4671 70.6464Z" fill="#00093C"/>
                     <path d="M16.4671 70.6464C7.38524 70.6464 0 63.2611 0 54.1793C0 45.0974 7.38524 37.7122 16.4671 37.7122C25.549 37.7122 32.9342 45.0974 32.9342 54.1793C32.9342 63.311 25.549 70.6464 16.4671 70.6464Z" fill="#00093C"/>
                     <path d="M55.3895 1.8336L37.5251 31.0253C37.0261 31.8736 37.575 32.9215 38.5232 32.9215H56.3875H74.2518C75.1999 32.9215 75.7488 31.8237 75.2498 31.0253L57.3855 1.8336C56.8865 1.08509 55.8386 1.08509 55.3895 1.8336Z" fill="#00093C"/>
@@ -41,26 +41,25 @@
                             <path d="M16 8.5C16 11.3282 14.13 13.9545 12.0535 15.9699C11.036 16.9575 10.0146 17.754 9.24613 18.304C8.95504 18.5123 8.70155 18.6843 8.5 18.8171C8.29845 18.6843 8.04496 18.5123 7.75387 18.304C6.98537 17.754 5.96395 16.9575 4.94648 15.9699C2.86999 13.9545 1 11.3282 1 8.5C1 4.35786 4.35786 1 8.5 1C12.6421 1 16 4.35786 16 8.5Z" stroke="#00093C" stroke-width="2"/>
                             <circle cx="8.5" cy="7.5" r="2.5" fill="#00093C"/>
                         </svg>
-                        <a href="" id="address-menu">Нижний Новгород
+                        <a href=""  data-header-link="address">Нижний Новгород
                             <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="10" height="7" viewBox="0 0 10 7" fill="none">
                                 <path d="M1 1L5 5L9 1" stroke="#00093C" stroke-width="2" stroke-linecap="round"/>
                             </svg>
                         </a>
                     </div>
 
-
-                    <div class="header__container-contacts-submenu hidden" id="submenu-header">
+                    <div class="header__container-contacts-submenu hidden" data-city-list="submenu-header">
                         <div class="header__container-contacts-submenu-block">
                             <h2 class="header__container-contacts-submenu-label">
                                 Выберите свой город
                             </h2>
-                            <svg id="close-menu" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                            <svg id="close-menu" data-close-link="header-sub-close" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
                                 <path d="M1 1L11 11" stroke="#00093C" stroke-width="2" stroke-linecap="round"/>
                                 <path d="M11 1L1 11" stroke="#00093C" stroke-width="2" stroke-linecap="round"/>
                             </svg>
                         </div>
                         <div class="header__container-contacts-submenu-flex">
-                            <ul>
+                            <ul class="header__container-contacts-submenu-list">
                                 <li><a href="">Абакан</a></li>
                                 <li><a href="">Азов</a></li>
                                 <li><a href="">Александров</a></li>
@@ -73,7 +72,7 @@
                                 <li><a href="">Арзамас</a></li>
                                 <li><a href="">Армавир</a></li>
                             </ul>
-                            <ul>
+                            <ul class="header__container-contacts-submenu-list">
                                 <li><a href="">Абакан</a></li>
                                 <li><a href="">Азов</a></li>
                                 <li><a href="">Александров</a></li>
@@ -86,7 +85,7 @@
                                 <li><a href="">Арзамас</a></li>
                                 <li><a href="">Армавир</a></li>
                             </ul>
-                            <ul>
+                            <ul class="header__container-contacts-submenu-list">
                                 <li><a href="">Абакан</a></li>
                                 <li><a href="">Азов</a></li>
                                 <li><a href="">Александров</a></li>
@@ -99,7 +98,7 @@
                                 <li><a href="">Арзамас</a></li>
                                 <li><a href="">Армавир</a></li>
                             </ul>
-                            <ul>
+                            <ul class="header__container-contacts-submenu-list">
                                 <li><a href="">Абакан</a></li>
                                 <li><a href="">Азов</a></li>
                                 <li><a href="">Александров</a></li>
@@ -112,7 +111,7 @@
                                 <li><a href="">Арзамас</a></li>
                                 <li><a href="">Армавир</a></li>
                             </ul>
-                            <ul>
+                            <ul class="header__container-contacts-submenu-list">
                                 <li><a href="">Абакан</a></li>
                                 <li><a href="">Азов</a></li>
                                 <li><a href="">Александров</a></li>

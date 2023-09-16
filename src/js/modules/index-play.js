@@ -3,9 +3,6 @@ export function hideLayers() {
     const imageCover = document.getElementById('index-video-cover');
     const playBtn = document.getElementById('index-video-play');
     const video = document.getElementById('video');
-    console.log(video)
-
-
 
     playBtn.addEventListener('click', (e) => {
         console.log('click')
