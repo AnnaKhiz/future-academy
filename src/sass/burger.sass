@@ -15,7 +15,7 @@
 		pointer-events: none
 		position: fixed
 		left: 0%
-		top: 126px
+		top: 111px
 		overflow: hidden
 		padding: 33px 10px 55px
 		background: white
@@ -34,33 +34,46 @@
 		color: black
 	//&.show
 	//	left: 0
-	&__list-menu
-		display: none
-		@media screen and (max-width: 780px)
-			display: block
-			margin-bottom: 27px
-		& li
+	&__list
+		&-menu
+			display: none
+			@media screen and (max-width: 780px)
+				display: block
+				margin-bottom: 27px
+			& li
+				display: flex
+				align-items: center
+				&:not(:last-of-type)
+					margin-right: 40px
+				& a
+					color: $color-dark-blue
+					font: 500 normal 1rem/1.625rem 'Montserrat'
+				& svg
+					margin-right: 9px
+			& li:not(:first-of-type)
+				margin-bottom: 15px
+			& li.burger-phone, & li.burger-address
+				margin-bottom: 12px
+				& a
+					font: 600 normal 1.125rem/1.625rem 'Montserrat'
+			& li.burger-email
+				margin-bottom: 0
+			& li:first-of-type
+				margin-bottom: 27px
+			& li.burger-underline
+				margin-bottom: 33px
+			&-block
+				overflow: auto
+				height: 20vh
+			& li.enter
+				margin-bottom: 50px
+			&.second
+				margin-bottom: 25px
+		&-social
 			display: flex
+			column-gap: 40px
 			align-items: center
-			&:not(:last-of-type)
-				margin-right: 40px
-			& a
-				color: $color-black
-				font: 500 normal 0.875rem/1.0625rem 'Montserrat'
-			& svg
-				margin-right: 9px
-		& li:first-of-type
-			margin-bottom: 27px
-		& li:not(:first-of-type)
-			margin-bottom: 15px
-		& li.burger-underline
-			margin-bottom: 33px
-		&-block
-			overflow: auto
-			height: 40vh
-		& li.enter
-			margin-bottom: 50px
-
+			margin-bottom: 18px
 
 
 

@@ -122,7 +122,7 @@ ul {
   pointer-events: none;
   position: fixed;
   left: 0%;
-  top: 126px;
+  top: 111px;
   overflow: hidden;
   padding: 33px 10px 55px;
   background: white;
@@ -151,27 +151,45 @@ ul {
   margin-right: 40px;
 }
 .burger__list-menu li a {
-  color: #000000;
-  font: 500 normal 0.875rem/1.0625rem "Montserrat";
+  color: #00093C;
+  font: 500 normal 1rem/1.625rem "Montserrat";
 }
 .burger__list-menu li svg {
   margin-right: 9px;
 }
-.burger__list-menu li:first-of-type {
-  margin-bottom: 27px;
-}
 .burger__list-menu li:not(:first-of-type) {
   margin-bottom: 15px;
+}
+.burger__list-menu li.burger-phone, .burger__list-menu li.burger-address {
+  margin-bottom: 12px;
+}
+.burger__list-menu li.burger-phone a, .burger__list-menu li.burger-address a {
+  font: 600 normal 1.125rem/1.625rem "Montserrat";
+}
+.burger__list-menu li.burger-email {
+  margin-bottom: 0;
+}
+.burger__list-menu li:first-of-type {
+  margin-bottom: 27px;
 }
 .burger__list-menu li.burger-underline {
   margin-bottom: 33px;
 }
 .burger__list-menu-block {
   overflow: auto;
-  height: 40vh;
+  height: 20vh;
 }
 .burger__list-menu li.enter {
   margin-bottom: 50px;
+}
+.burger__list-menu.second {
+  margin-bottom: 25px;
+}
+.burger__list-social {
+  display: flex;
+  column-gap: 40px;
+  align-items: center;
+  margin-bottom: 18px;
 }
 
 .menu__btn {
@@ -273,6 +291,11 @@ body {
 @media screen and (max-width: 1080px) {
   .header__container-logo {
     margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__container-logo {
+    margin-bottom: 0px;
   }
 }
 .header__container-menu {
@@ -386,7 +409,7 @@ body {
   transition: all 0.3s ease-in-out 0s;
 }
 .header__container-contacts-submenu.burger-submenu {
-  height: 43vh;
+  height: 23vh;
 }
 .header__container-contacts-submenu-block {
   z-index: 2;
