@@ -69,6 +69,7 @@ img {
 h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: 400;
+  margin-bottom: 0;
 }
 
 p {
@@ -122,9 +123,9 @@ ul {
   pointer-events: none;
   position: fixed;
   left: 0%;
-  top: 111px;
+  top: 91px;
   overflow: hidden;
-  padding: 33px 10px 55px;
+  padding: 33px 10px 170px;
   background: white;
 }
 .burger.show .burger__container {
@@ -260,6 +261,11 @@ ul {
   padding: 0 15px;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .container-main {
+    padding: 0;
+  }
+}
 
 body {
   background-color: #F6F7F9;
@@ -268,6 +274,11 @@ body {
 .header {
   background-color: #ffffff;
   padding: 20px 0;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 10px;
+  }
 }
 .header__container {
   display: flex;
@@ -462,6 +473,11 @@ body {
 .header__container-contacts-submenu-label {
   color: #000000;
   font: 700 normal 2.25rem/2.125rem "Montserrat";
+}
+@media screen and (max-width: 768px) {
+  .header__container-contacts-submenu-label {
+    font: 700 normal 1rem/1.125rem "Montserrat";
+  }
 }
 
 .main__index-banner {
