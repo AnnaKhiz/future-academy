@@ -1,0 +1,122 @@
+@import "var"
+@import "mixins"
+
+.header
+  padding: 20px 0
+  background-color: $color-white
+  @media screen and (max-width: 768px)
+    padding: 10px
+
+  &__container
+    position: relative
+    display: flex
+    justify-content: space-between
+    align-items: center
+    @media screen and (max-width: 1080px)
+      display: block
+
+    &-logo
+      & svg
+        vertical-align: middle
+      &.blue
+        & svg path
+          fill: $color-dark-blue
+      &.white
+        & svg path
+          fill: $color-white
+      @media screen and (max-width: 1080px)
+        margin-bottom: 15px
+      @media screen and (max-width: 768px)
+        margin-bottom: 0
+
+    &-menu
+      display: flex
+      align-items: center
+      @media screen and (max-width: 1080px)
+        margin-bottom: 15px
+      @media screen and (max-width: 768px)
+        display: none
+      & li
+        @include link-header-menu
+        & svg
+          margin-right: 9px
+    &-contacts
+      display: flex
+      align-items: center
+      @media screen and (max-width: 768px)
+        display: none
+
+      & li
+        @include link-header-menu
+        & svg:not(.arrow)
+          margin-right: 9px
+        & svg.arrow
+          margin-left: 9px
+        &.phone
+          font: 500 normal 1rem/1.625rem 'Montserrat'
+        &.underline
+          text-decoration: underline
+
+      &-link
+        position: relative
+        display: flex
+        max-width: 195px
+        align-items: center
+
+        &.colored-line
+          @include line-gradient-pseudo (-44px, 0, 100%)
+
+        &.burger__list-menu-submenu-link
+          max-width: 100%
+          width: 100%
+
+      &-submenu
+        @include colored-shadow
+        position: absolute
+        top: 128%
+        left: 0
+        max-width: 1195px
+        width: 100%
+        padding: 17px 29px 20px
+        border-radius: 6px
+        background: $color-white
+        &.burger-submenu
+          height: 23vh
+
+        &-block
+          z-index: 2
+          display: flex
+          justify-content: space-between
+          align-items: start
+          margin-bottom: 25px
+          & svg
+            cursor: pointer
+        &.hidden
+          display: none
+        &-flex
+          display: flex
+          column-gap: 20px
+          align-items: flex-start
+          @media screen and (max-width: 980px)
+            display: block
+          & li
+            &:not(:last-of-type)
+              margin-bottom: 10px
+            @media screen and (max-width: 980px)
+            &:last-of-type
+              margin-bottom: 10px
+        &-list
+          & li:not(:last-of-type)
+            @media screen and (max-width: 980px)
+              margin-right: 0
+          &:last-of-type li:last-of-type
+            margin-bottom: 0
+
+          & li a
+            @include text-parameters (400, .875rem, 1.75rem, $color-dark-blue)
+            &:hover
+              text-decoration: underline
+        &-label
+          @include label-text-medium
+          @media screen and (max-width: 768px)
+            font: 700 normal 1rem/1.125rem "Montserrat"
