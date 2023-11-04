@@ -1925,6 +1925,21 @@ ul {
   border-radius: 20px;
   background-color: #ffffff;
 }
+@media screen and (max-width: 1000px) {
+  .main__index-feedback-block {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main__index-feedback-block {
+    max-width: 340px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .main__index-feedback-block {
+    max-width: 90%;
+  }
+}
 .main__index-feedback-flex {
   display: flex;
   justify-content: space-between;
@@ -1993,6 +2008,11 @@ ul {
 .main__index-feedback-swiper-wraper {
   margin-left: -150px;
   text-align: left;
+}
+@media screen and (max-width: 425px) {
+  .main__index-feedback-swiper-wraper {
+    margin-left: 0;
+  }
 }
 .main__index-feedback-swiper-slide {
   display: flex;
