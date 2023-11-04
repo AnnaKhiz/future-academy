@@ -7,7 +7,6 @@ export function callBurgerMenu() {
 
         menuBtn.addEventListener('click', (e) => {
             e.preventDefault();
-            console.log('clicked')
             menu.classList.toggle('show');
             bodyElem.classList.toggle('fixed');
             menuContainer.classList.toggle('scroll');
@@ -18,7 +17,6 @@ export function callBurgerMenu() {
         if (window.screen.width <= 768) {
             const headerElem = document.getElementById('header');
             const logoElem = [...document.querySelectorAll('#logo-img>path')];
-            console.log(logoElem)
             headerElem.style.backgroundColor = "#00093C";
             logoElem.forEach((e) => {
                 e.style.fill = "#ffffff";

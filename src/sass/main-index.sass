@@ -24,8 +24,9 @@
           padding: 126px 87px 151px 350px
           @media screen and (max-width: 1279px)
             width: 100%
+            padding: 126px 0 151px 0
           @media screen and (max-width: 440px)
-            padding: 0
+            padding-top: 126px
 
       &-item
         &.image
@@ -78,6 +79,9 @@
           left: 1%
         @media screen and (max-width: 1200px)
           left: 0
+        @media screen and (max-width: 930px)
+          position: static
+          text-align: center
 
       &-label
         @include text-parameters (700, 2.25rem, 2.75rem, $color-white)
@@ -88,7 +92,7 @@
           margin-bottom: 41px
           @media screen and (max-width: 1160px)
             margin-bottom: 30px
-        @media screen and (max-width: 1160px)
+        @media screen and (max-width: 440px)
           font-size: 1.8rem
           line-height: 2rem
 
@@ -503,7 +507,7 @@
               left: -15%
             @media screen and (max-width: 1095px)
               left: -9%
-              bottom: -11%
+              bottom: -7%
             @media screen and (max-width: 950px)
               left: 0
             @media screen and (max-width: 860px)
@@ -535,32 +539,49 @@
               right: -9%
             @media screen and (max-width: 950px)
               right: -2%
-              bottom: -27%
+              bottom: -9%
             @media screen and (max-width: 860px)
               display: none
 
     &-statistic
       padding-bottom: 82px
+      @media screen and (max-width: 930px)
+        text-align: center
+        padding-bottom: 18px
 
       &-label
         @include text-parameters (700, 1.5rem, 2.125rem, $color-black)
         margin-bottom: 43px
         max-width: 750px
         overflow: hidden
+        @media screen and (max-width: 930px)
+          max-width: 100%
 
       &-container
         display: flex
         justify-content: flex-start
         align-items: start
         column-gap: 120px
+        @media screen and (max-width: 1050px)
+          column-gap: 80px
+        @media screen and (max-width: 980px)
+          column-gap: 40px
+        @media screen and (max-width: 930px)
+          display: block
+
 
         &-item
           width: fit-content
+          @media screen and (max-width: 930px)
+            margin: auto
 
           &-digit
             @include text-parameters (700, 5.375rem, 6.5625rem, $color-white)
             letter-spacing: 8.17px
             color: white
+            @media screen and (max-width: 370px)
+              font-size: 4.375rem
+              line-height: 5.5625rem
 
             &.first
               @include colored-border-text ('600')
@@ -569,6 +590,12 @@
             &.second
               @include colored-border-text ('82')
               position: relative
+              @media screen and (max-width: 930px)
+                &:before
+                  left: calc(50% - 61px)
+              @media screen and (max-width: 370px)
+                &:before
+                  left: calc(50% - 52px)
 
             &.third
               @include colored-border-text ('14 795')

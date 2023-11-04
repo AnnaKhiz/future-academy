@@ -15,12 +15,10 @@ export function callAddressMenu() {
     }
 
     addressBtn.forEach((e) => {
-        console.log(e)
         showHideMenu(e)
     });
 
     closeLink.forEach((e) => {
-        console.log(e)
         showHideMenu(e)
     });
 
