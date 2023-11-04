@@ -254,7 +254,7 @@
       padding-top: 100px
       @media screen and (max-width: 1000px)
         padding-top: 40px
-
+        padding-bottom: 40px
       &-container
         display: flex
         column-gap: 40px
@@ -302,6 +302,8 @@
 
           &-tab
             padding: 40px 0 218px 0
+            @media screen and (max-width: 930px)
+              padding: 40px 0 0 0
 
             &-nav
               &-list
@@ -430,33 +432,22 @@
     &-video
       padding-bottom: 116px
       text-align: center
-
+      @media screen and (max-width: 930px)
+        padding-bottom: 40px
       &-container
         position: relative
         margin: 0 auto
         max-width: 780px
+        max-height: 436px
         border-radius: 20px
-
-        &.pseudo
-          &:before
-            content: ''
-            position: absolute
-            top: 0
-            left: 0
-            z-index: 2
-            width: 780px
-            height: 436px
-            opacity: 0.8
-            border-radius: 20px
-            background-color: #00093C
-            pointer-events: none
-            cursor: pointer
+        object-fit: contain
 
         & img.image-cover
-          position: absolute
-          top: 0
-          left: 0
+          position: relative
           z-index: 1
+          width: 100%
+          height: auto
+          display: block
           pointer-events: none
           cursor: pointer
           &.hidden
@@ -468,13 +459,24 @@
           left: calc(50% - 54px)
           z-index: 3
           cursor: pointer
+          @media screen and (max-width: 575px)
+            top: calc(50% - 30px)
+            left: calc(50% - 30px)
+            width: 60px
+            height: 60px
 
           &.hidden
             display: none
 
         & iframe
+          position: absolute
+          top: 0
+          left: 0
           z-index: 0
           border-radius: 20px
+          width: 100%
+          height: 100%
+          visibility: hidden
 
         &-icon
           &-triangle
@@ -482,24 +484,60 @@
             top: -16%
             left: -12%
             z-index: -1
+            @media screen and (max-width: 1095px)
+              top: -21%
+              left: -7%
+            @media screen and (max-width: 950px)
+              left: -4%
+            @media screen and (max-width: 860px)
+              display: none
 
           &-left-line
             position: absolute
             bottom: 5%
             left: -32%
             z-index: -1
+            @media screen and (max-width: 1280px)
+              left: -19%
+            @media screen and (max-width: 1150px)
+              left: -15%
+            @media screen and (max-width: 1095px)
+              left: -9%
+              bottom: -11%
+            @media screen and (max-width: 950px)
+              left: 0
+            @media screen and (max-width: 860px)
+              display: none
 
           &-right-line
             position: absolute
             top: -9%
             right: -31%
             z-index: -1
+            @media screen and (max-width: 1280px)
+              right: -22%
+            @media screen and (max-width: 1150px)
+              right: -19%
+            @media screen and (max-width: 1095px)
+              right: -10%
+            @media screen and (max-width: 950px)
+              right: -5%
+              top: -25%
+            @media screen and (max-width: 860px)
+              display: none
 
           &-plus
             position: absolute
             bottom: -38%
             right: -20%
             z-index: -1
+            @media screen and (max-width: 1150px)
+              right: -9%
+            @media screen and (max-width: 950px)
+              right: -2%
+              bottom: -27%
+            @media screen and (max-width: 860px)
+              display: none
 
     &-statistic
       padding-bottom: 82px

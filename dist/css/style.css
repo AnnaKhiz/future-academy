@@ -759,6 +759,7 @@ ul {
 @media screen and (max-width: 1000px) {
   .main__index-professions {
     padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 .main__index-professions-container {
@@ -839,6 +840,11 @@ ul {
 }
 .main__index-professions-container-item-tab {
   padding: 40px 0 218px 0;
+}
+@media screen and (max-width: 930px) {
+  .main__index-professions-container-item-tab {
+    padding: 40px 0 0 0;
+  }
 }
 .main__index-professions-container-item-tab-nav-list {
   display: flex;
@@ -1115,31 +1121,25 @@ ul {
   padding-bottom: 116px;
   text-align: center;
 }
+@media screen and (max-width: 930px) {
+  .main__index-video {
+    padding-bottom: 40px;
+  }
+}
 .main__index-video-container {
   position: relative;
   margin: 0 auto;
   max-width: 780px;
+  max-height: 436px;
   border-radius: 20px;
-}
-.main__index-video-container.pseudo:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  width: 780px;
-  height: 436px;
-  opacity: 0.8;
-  border-radius: 20px;
-  background-color: #00093C;
-  pointer-events: none;
-  cursor: pointer;
+  object-fit: contain;
 }
 .main__index-video-container img.image-cover {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   z-index: 1;
+  width: 100%;
+  height: auto;
+  display: block;
   pointer-events: none;
   cursor: pointer;
 }
@@ -1153,12 +1153,26 @@ ul {
   z-index: 3;
   cursor: pointer;
 }
+@media screen and (max-width: 575px) {
+  .main__index-video-container img.play {
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    width: 60px;
+    height: 60px;
+  }
+}
 .main__index-video-container img.play.hidden {
   display: none;
 }
 .main__index-video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: 0;
   border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
 }
 .main__index-video-container-icon-triangle {
   position: absolute;
@@ -1166,11 +1180,53 @@ ul {
   left: -12%;
   z-index: -1;
 }
+@media screen and (max-width: 1095px) {
+  .main__index-video-container-icon-triangle {
+    top: -21%;
+    left: -7%;
+  }
+}
+@media screen and (max-width: 950px) {
+  .main__index-video-container-icon-triangle {
+    left: -4%;
+  }
+}
+@media screen and (max-width: 860px) {
+  .main__index-video-container-icon-triangle {
+    display: none;
+  }
+}
 .main__index-video-container-icon-left-line {
   position: absolute;
   bottom: 5%;
   left: -32%;
   z-index: -1;
+}
+@media screen and (max-width: 1280px) {
+  .main__index-video-container-icon-left-line {
+    left: -19%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .main__index-video-container-icon-left-line {
+    left: -15%;
+  }
+}
+@media screen and (max-width: 1095px) {
+  .main__index-video-container-icon-left-line {
+    left: -9%;
+    bottom: -11%;
+  }
+}
+@media screen and (max-width: 950px) {
+  .main__index-video-container-icon-left-line {
+    left: 0;
+  }
+}
+@media screen and (max-width: 860px) {
+  .main__index-video-container-icon-left-line {
+    display: none;
+  }
 }
 .main__index-video-container-icon-right-line {
   position: absolute;
@@ -1178,11 +1234,53 @@ ul {
   right: -31%;
   z-index: -1;
 }
+@media screen and (max-width: 1280px) {
+  .main__index-video-container-icon-right-line {
+    right: -22%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .main__index-video-container-icon-right-line {
+    right: -19%;
+  }
+}
+@media screen and (max-width: 1095px) {
+  .main__index-video-container-icon-right-line {
+    right: -10%;
+  }
+}
+@media screen and (max-width: 950px) {
+  .main__index-video-container-icon-right-line {
+    right: -5%;
+    top: -25%;
+  }
+}
+@media screen and (max-width: 860px) {
+  .main__index-video-container-icon-right-line {
+    display: none;
+  }
+}
 .main__index-video-container-icon-plus {
   position: absolute;
   bottom: -38%;
   right: -20%;
   z-index: -1;
+}
+@media screen and (max-width: 1150px) {
+  .main__index-video-container-icon-plus {
+    right: -9%;
+  }
+}
+@media screen and (max-width: 950px) {
+  .main__index-video-container-icon-plus {
+    right: -2%;
+    bottom: -27%;
+  }
+}
+@media screen and (max-width: 860px) {
+  .main__index-video-container-icon-plus {
+    display: none;
+  }
 }
 .main__index-statistic {
   padding-bottom: 82px;
