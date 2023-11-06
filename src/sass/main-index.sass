@@ -868,6 +868,46 @@
         height: fit-content
         width: 100%
         min-height: 580px
+        @media screen and (max-width: 1736px)
+          min-height: 600px
+        @media screen and (max-width: 1600px)
+          min-height: 578px
+        @media screen and (max-width: 1443px)
+          min-height: 600px
+        @media screen and (max-width: 1298px)
+          min-height: 625px
+        @media screen and (max-width: 1279px)
+          min-height: 580px
+        @media screen and (max-width: 1136px)
+          min-height: 600px
+        @media screen and (max-width: 1099px)
+          min-height: 520px
+        @media screen and (max-width: 1027px)
+          min-height: 540px
+        @media screen and (max-width: 1000px)
+          min-height: 580px
+        @media screen and (max-width: 858px)
+          min-height: 600px
+        @media screen and (max-width: 771px)
+          min-height: 620px
+        @media screen and (max-width: 767px)
+          min-height: 515px
+        @media screen and (max-width: 673px)
+          min-height: 534px
+        @media screen and (max-width: 636px)
+          min-height: 555px
+        @media screen and (max-width: 620px)
+          min-height: 580px
+        @media screen and (max-width: 560px)
+          min-height: 600px
+        @media screen and (max-width: 502px)
+          min-height: 625px
+        @media screen and (max-width: 501px)
+          min-height: 670px
+        @media screen and (max-width: 472px)
+          min-height: 690px
+        @media screen and (max-width: 450px)
+          min-height: 710px
 
       &-label
         @include text-parameters (700, 2.25rem, 2.75rem, $color-white)
@@ -883,6 +923,8 @@
         max-width: 280px
         border-radius: 20px
         background-color: $color-white
+        @media screen and (max-width: 1100px)
+          max-width: 330px
         @media screen and (max-width: 1000px)
           max-width: 300px
         @media screen and (max-width: 768px)
@@ -950,39 +992,58 @@
         &-scrollbar
           max-width: 1170px
           background-color: $color-white
+          @media screen and (max-width: 1200px)
+            max-width: 50%
+          //& div.swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal
+          //  @media screen and (max-width: 1200px)
+          //    width: 50%
 
           & div.swiper-horizontal>.swiper-scrollbar, &.swiper-scrollbar-horizontal
             left: calc(50% - 585px)
             bottom: 32px
+            @media screen and (max-width: 1200px)
+              left: 25vw
 
           & > div.swiper-scrollbar-drag
             background: $color-blue-yellow-gradient
+          &-drag
+            transform: translate3d(0px, 0px, 0px)
 
       &-icon
         &-left-line
           position: absolute
           bottom: 10%
           left: 0%
+          @media screen and (max-width: 860px)
+            display: none
 
         &-plus
           position: absolute
           top: 8%
           left: 22%
+          @media screen and (max-width: 860px)
+            display: none
 
         &-triangle
           position: absolute
           bottom: 22%
           left: 49%
+          @media screen and (max-width: 860px)
+            display: none
 
         &-top-line
           position: absolute
           top: -3%
           right: 16%
+          @media screen and (max-width: 860px)
+            display: none
 
         &-circle
           position: absolute
           bottom: 13%
           right: 14%
+          @media screen and (max-width: 860px)
+            display: none
 
     &-preferences
       padding: 85px 0 358px

@@ -24,7 +24,7 @@ export function swipeIndexSwiper() {
                 slidesPerView: 3,
                 spaceBetween: 20
             },
-            1130: {
+            1100: {
                 slidesPerView: 4,
                 spaceBetween: 15
             },
@@ -38,4 +38,17 @@ export function swipeIndexSwiper() {
             }
         }
     });
+}
+
+export function dragPosition() {
+    document.addEventListener('DOMContentLoaded', () => {
+        const dragElem = document.querySelector('#scrollbar-drag>.swiper-scrollbar-drag');
+        dragElem.style.transform = 'translate3d(0px, 0px, 0px)';
+    })
+}
+
+export function setBgSize() {
+    const sectionFeedback = document.getElementById('feedback-section');
+    const before = document.querySelector('.main__index-feedback:before');
+    console.log(before)
 }

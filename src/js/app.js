@@ -9,6 +9,8 @@ flsFunctions.isWebp();
 header.callAddressMenu();
 video.hideLayers();
 swiper.swipeIndexSwiper();
+swiper.dragPosition();
+swiper.setBgSize()
 
 
 /*
