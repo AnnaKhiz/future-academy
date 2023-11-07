@@ -58,6 +58,8 @@
   padding: 17px 54px
   font: 700 normal 0.875rem/1.625rem 'Montserrat'
   color: $color
+  @media screen and (max-width: 395px)
+    padding: 17px 15px
 
 
 //buttons
@@ -73,6 +75,7 @@
   &:hover
     @include trans
     background: $color-light-orange
+
 
 @mixin button-border-color ($color)
   @include trans
@@ -130,7 +133,6 @@
     & a
       @include trans
       color: $color-white
-
   & a
     @include button-text-normal-color ($color-black, 16px, 20px)
     @media screen and (max-width: 490px)
