@@ -404,7 +404,7 @@ ul {
     left: 0;
   }
 }
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 1280px) {
   .main__index-banner-text {
     position: static;
     text-align: center;
