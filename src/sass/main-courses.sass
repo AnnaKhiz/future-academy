@@ -5,11 +5,22 @@
 .main-courses
   background-color: $bg-gray
   padding-top: 36px
+
   &__header
     @include text-parameters (700, 2.25rem, 2.75rem, $color-black)
+    position: relative
     margin-bottom: 55px
+    &:before
+      position: absolute
+      bottom: -286%
+      left: 0
+      width: 100%
+      content: ''
+      display: block
+      height: 1px
+      background-color: $color-gray-line
   &__aside
-    padding-top: 65px
+    padding-top: 70px
     &__radio-block
       margin-bottom: 20px
       & > label
@@ -19,12 +30,24 @@
       & > input:checked + label
         @include text-parameters (700, 0.875rem, 1.0625rem, $color-black)
     &__complication, &__education
-      padding: 25px 0
+
+      &:before
+        content: ''
+        display: block
+        height: 1px
+        background-color: $color-gray-line
+
     &__duration
-      padding: 25px 0 70px 0
+      margin-bottom: 25px
+      &:before
+        content: ''
+        display: block
+        height: 1px
+        background-color: $color-gray-line
     &__label
       @include text-parameters (500, 1rem, 1.25rem, $color-black)
       margin-bottom: 20px
+      margin-top: 20px
       &-small
         @include text-parameters (400, 0.875rem, 1.0625rem, $radio-not-checked)
         margin-bottom: 16px
@@ -34,6 +57,7 @@
     align-items: start
     justify-content: flex-start
     column-gap: 23px
+
   &__professions
     position: relative
     z-index: 0

@@ -3168,10 +3168,21 @@ ul {
   font-size: 2.25rem;
   line-height: 2.75rem;
   color: #000000;
+  position: relative;
   margin-bottom: 55px;
 }
+.main-courses__header:before {
+  position: absolute;
+  bottom: -286%;
+  left: 0;
+  width: 100%;
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #E0E0E0;
+}
 .main-courses__aside {
-  padding-top: 65px;
+  padding-top: 70px;
 }
 .main-courses__aside__radio-block {
   margin-bottom: 20px;
@@ -3200,11 +3211,20 @@ ul {
   line-height: 1.0625rem;
   color: #000000;
 }
-.main-courses__aside__complication, .main-courses__aside__education {
-  padding: 25px 0;
+.main-courses__aside__complication:before, .main-courses__aside__education:before {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #E0E0E0;
 }
 .main-courses__aside__duration {
-  padding: 25px 0 70px 0;
+  margin-bottom: 25px;
+}
+.main-courses__aside__duration:before {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #E0E0E0;
 }
 .main-courses__aside__label {
   font-weight: 500;
@@ -3214,6 +3234,7 @@ ul {
   line-height: 1.25rem;
   color: #000000;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 .main-courses__aside__label-small {
   font-weight: 400;
