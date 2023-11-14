@@ -115,6 +115,7 @@
           & svg circle
             fill: $color-dark-blue
 
+
       &-submenu
         @include colored-shadow
         position: absolute
@@ -127,6 +128,10 @@
         background: $color-white
         &.burger-submenu
           height: 23vh
+        &.before-all
+          z-index: 1
+          &:before
+            content: none
 
         &-block
           z-index: 2

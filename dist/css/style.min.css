@@ -2928,6 +2928,12 @@ ul {
 .header-block__container-contacts-submenu.burger-submenu {
   height: 23vh;
 }
+.header-block__container-contacts-submenu.before-all {
+  z-index: 1;
+}
+.header-block__container-contacts-submenu.before-all:before {
+  content: none;
+}
 .header-block__container-contacts-submenu-block {
   z-index: 2;
   display: flex;
