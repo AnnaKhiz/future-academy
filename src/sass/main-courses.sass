@@ -1,0 +1,107 @@
+@import "var"
+@import "mixins"
+
+
+.main-courses
+  background-color: $bg-gray
+  padding-top: 36px
+  &__header
+    @include text-parameters (700, 2.25rem, 2.75rem, $color-black)
+    margin-bottom: 55px
+  &__aside
+    padding-top: 65px
+    &__radio-block
+      margin-bottom: 20px
+      & > label
+        @include text-parameters (400, 0.875rem, 1.0625rem, $radio-not-checked)
+        &:hover
+          @include text-parameters (500, 0.875rem, 1.0625rem, $color-black)
+      & > input:checked + label
+        @include text-parameters (700, 0.875rem, 1.0625rem, $color-black)
+    &__complication, &__education
+      padding: 25px 0
+    &__duration
+      padding: 25px 0 70px 0
+    &__label
+      @include text-parameters (500, 1rem, 1.25rem, $color-black)
+      margin-bottom: 20px
+      &-small
+        @include text-parameters (400, 0.875rem, 1.0625rem, $radio-not-checked)
+        margin-bottom: 16px
+
+  &__container-flex
+    display: flex
+    align-items: start
+    justify-content: flex-start
+    column-gap: 23px
+  &__professions
+    position: relative
+    z-index: 0
+    & .main__index-professions-container-item-tab
+      padding: 40px 0 70px 0
+  &__programs
+    position: relative
+    z-index: 0
+    display: flex
+    flex-wrap: wrap
+    column-gap: 20px
+    row-gap: 20px
+    &__item
+      @include colored-shadow
+      @include trans
+      position: relative
+      padding: 30px
+      max-width: 48%
+      border-radius: 20px
+      &:hover
+        &:before
+          inset: -3px
+      &.blue
+        background-color: $color-light-blue
+      &.orange
+        background-color: $color-warm-orange
+      &.yellow
+        background-color: $color-yellow
+      &.purple
+        background-color: $color-violet
+      &.green
+        background-color: $color-green
+      &.dark-blue
+        background-color: $color-warm-blue
+      &.warm-yellow
+        background-color: $color-light-yellow
+      &.pink
+        background-color: $color-pink
+      &.sale
+        &:after
+          @include text-parameters (700, 0.75rem, 0.9375rem, $color-white)
+          position: absolute
+          bottom: 10%
+          right: -2%
+          content: '-10%'
+          background: $color-sale
+          width: 60px
+          height: 30px
+          border-radius: 20px
+          text-align: center
+          padding: 7px 0
+
+
+
+      &__name
+        @include text-parameters (400, 0.75rem, 0.9375rem, $color-dark-grey)
+        margin-bottom: 18px
+      &__title-block
+        display: flex
+        justify-content: space-between
+        align-items: center
+        column-gap: 20px
+        margin-bottom: 12px
+      &__title
+        @include text-parameters (500, 1.125rem, 1.375rem, $color-dark-blue)
+      &__description
+        @include text-parameters (400, 0.75rem, 1.125rem, $color-dark-grey)
+        margin-bottom: 25px
+      &__duration
+        @include text-parameters (400, 0.75rem, 0.9375rem, $color-black)
+

@@ -7,10 +7,16 @@ import * as burger from "./modules/burger.js";
 burger.callBurgerMenu();
 flsFunctions.isWebp();
 header.callAddressMenu();
-video.hideLayers();
-swiper.swipeIndexSwiper();
-swiper.dragPosition();
-swiper.setBgSize()
+if (document.getElementById('index-video-container')) {
+    video.hideLayers();
+}
+
+if (document.querySelector('.main__index-feedback-swiper')) {
+    swiper.swipeIndexSwiper();
+    swiper.dragPosition();
+    swiper.setBgSize()
+}
+
 
 
 /*

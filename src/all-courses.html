@@ -10,7 +10,509 @@
     "color-underline":"colored-line"
     })
 <main class="main-courses">
+    <div class="container-main main-courses">
+        <h1 class="main-courses__header">
+            Все программы обучения
+        </h1>
+        <section class="main-courses__container-flex">
+            <aside class="main-courses__aside">
 
+                <form class="main-courses__aside__complication" action="#" id="complication-form">
+                    <h2 class="main-courses__aside__label">
+                        Уровень сложности
+                    </h2>
+                    <div class="main-courses__aside__radio-block">
+                        <input type="radio" id="newbie" value="newbie" name="complication" checked>
+                        <label for="newbie">Новичок</label>
+                    </div>
+                    <div class="main-courses__aside__radio-block">
+                        <input type="radio" id="user" value="user" name="complication">
+                        <label for="user">Пользователь</label>
+                    </div>
+                    <div class="main-courses__aside__radio-block">
+                        <input type="radio" id="profi" value="profi" name="complication">
+                        <label for="profi">Профессионал</label>
+                    </div>
+                    <div class="main-courses__aside__radio-block">
+                        <input type="radio" id="cheater" value="cheater" name="complication">
+                        <label for="cheater">Читер</label>
+                    </div>
+                </form>
+
+                <form class="main-courses__aside__education" action="#" id="education-form">
+                    <h2 class="main-courses__aside__label">
+                        Тип обучения
+                    </h2>
+                    <div class="main-courses__aside__radio-block">
+                        <input type="radio" id="any" value="any" name="education" checked>
+                        <label for="any">Любой</label>
+                    </div>
+                    <div class="main-courses__aside__radio-block">
+                        <input type="radio" id="profession" value="profession" name="education">
+                        <label for="profession">Профессия</label>
+                    </div>
+                    <div class="main-courses__aside__radio-block">
+                        <input type="radio" id="course" value="course" name="education">
+                        <label for="course">Курс</label>
+                    </div>
+                </form>
+
+                <form class="main-courses__aside__duration" action="#" id="duration-form">
+                    <h2 class="main-courses__aside__label">
+                        Длительность
+                    </h2>
+                    <h3 class="main-courses__aside__label-small">
+                        от 1 до 24 месяцев
+                    </h3>
+                    <input type="range" name="duration" id="duration-range">
+                </form>
+                <div class="main-courses__aside__banner">
+                    <img src="./img/aside-banner.png" alt="aside banner">
+                </div>
+            </aside>
+            <div class="main-courses__main-content">
+                <section class="main-courses__professions">
+                    @@include('html/professions-tabs.html')
+                </section>
+                <section class="main-courses__programs">
+                    <div class="main-courses__programs__item blue">
+                        <h3 class="main-courses__programs__item__name">
+                            Программа
+                        </h3>
+                        <div class="main-courses__programs__item__title-block">
+                            <svg class="main-courses__programs__item__img" xmlns="http://www.w3.org/2000/svg" width="27" height="43" viewBox="0 0 27 43" fill="none">
+                                <rect x="1" y="1.40625" width="24.0406" height="40" rx="3" stroke="#00093C" stroke-width="2"/>
+                                <path d="M12.0342 37.4102H14.0342" stroke="#00093C" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M15.0415 29.4711L21.0297 29.4709" stroke="#00093C" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M18.0355 26.4769L18.0356 32.4651" stroke="#00093C" stroke-width="2" stroke-linecap="round"/>
+                                <mask id="path-5-inside-1_64_7723" fill="white">
+                                    <rect x="4.04736" y="5.38672" width="7.90212" height="7.90212" rx="1"/>
+                                </mask>
+                                <rect x="4.04736" y="5.38672" width="7.90212" height="7.90212" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-5-inside-1_64_7723)"/>
+                                <mask id="path-6-inside-2_64_7723" fill="white">
+                                    <rect x="14.0342" y="5.38672" width="8.00441" height="8.00441" rx="1"/>
+                                </mask>
+                                <rect x="14.0342" y="5.38672" width="8.00441" height="8.00441" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-6-inside-2_64_7723)"/>
+                                <mask id="path-7-inside-3_64_7723" fill="white">
+                                    <rect x="4.04736" y="15.4534" width="7.90212" height="7.90212" rx="1"/>
+                                </mask>
+                                <rect x="4.04736" y="15.4534" width="7.90212" height="7.90212" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-7-inside-3_64_7723)"/>
+                                <mask id="path-8-inside-4_64_7723" fill="white">
+                                    <rect x="14.0342" y="15.4534" width="8.00441" height="8.00441" rx="1"/>
+                                </mask>
+                                <rect x="14.0342" y="15.4534" width="8.00441" height="8.00441" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-8-inside-4_64_7723)"/>
+                                <mask id="path-9-inside-5_64_7723" fill="white">
+                                    <rect x="4.04736" y="25.5198" width="7.90212" height="7.90212" rx="1"/>
+                                </mask>
+                                <rect x="4.04736" y="25.5198" width="7.90212" height="7.90212" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-9-inside-5_64_7723)"/>
+                            </svg>
+                            <h2 class="main-courses__programs__item__title">
+                                «Разработка мобильных приложений»
+                            </h2>
+                        </div>
+                        <p class="main-courses__programs__item__description">
+                            Разработчик мобильных приложений создаёт приложения, которыми люди ежедневно пользуются
+                            на смартфонах, умных часах и планшетах.
+                        </p>
+                        <p class="main-courses__programs__item__duration">
+                            24 месяца
+                        </p>
+                    </div>
+                    <div class="main-courses__programs__item orange sale">
+                        <h3 class="main-courses__programs__item__name">
+                            Программа
+                        </h3>
+                        <div class="main-courses__programs__item__title-block">
+                            <svg class="main-courses__programs__item__img" xmlns="http://www.w3.org/2000/svg" width="27" height="43" viewBox="0 0 27 43" fill="none">
+                                <rect x="1" y="1.40625" width="24.0406" height="40" rx="3" stroke="#00093C" stroke-width="2"/>
+                                <path d="M12.0342 37.4102H14.0342" stroke="#00093C" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M15.0415 29.4711L21.0297 29.4709" stroke="#00093C" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M18.0355 26.4769L18.0356 32.4651" stroke="#00093C" stroke-width="2" stroke-linecap="round"/>
+                                <mask id="path-5-inside-1_64_7723" fill="white">
+                                    <rect x="4.04736" y="5.38672" width="7.90212" height="7.90212" rx="1"/>
+                                </mask>
+                                <rect x="4.04736" y="5.38672" width="7.90212" height="7.90212" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-5-inside-1_64_7723)"/>
+                                <mask id="path-6-inside-2_64_7723" fill="white">
+                                    <rect x="14.0342" y="5.38672" width="8.00441" height="8.00441" rx="1"/>
+                                </mask>
+                                <rect x="14.0342" y="5.38672" width="8.00441" height="8.00441" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-6-inside-2_64_7723)"/>
+                                <mask id="path-7-inside-3_64_7723" fill="white">
+                                    <rect x="4.04736" y="15.4534" width="7.90212" height="7.90212" rx="1"/>
+                                </mask>
+                                <rect x="4.04736" y="15.4534" width="7.90212" height="7.90212" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-7-inside-3_64_7723)"/>
+                                <mask id="path-8-inside-4_64_7723" fill="white">
+                                    <rect x="14.0342" y="15.4534" width="8.00441" height="8.00441" rx="1"/>
+                                </mask>
+                                <rect x="14.0342" y="15.4534" width="8.00441" height="8.00441" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-8-inside-4_64_7723)"/>
+                                <mask id="path-9-inside-5_64_7723" fill="white">
+                                    <rect x="4.04736" y="25.5198" width="7.90212" height="7.90212" rx="1"/>
+                                </mask>
+                                <rect x="4.04736" y="25.5198" width="7.90212" height="7.90212" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-9-inside-5_64_7723)"/>
+                            </svg>
+                            <h2 class="main-courses__programs__item__title">
+                                «Разработка мобильных приложений»
+                            </h2>
+                        </div>
+                        <p class="main-courses__programs__item__description">
+                            Разработчик мобильных приложений создаёт приложения, которыми люди ежедневно пользуются
+                            на смартфонах, умных часах и планшетах.
+                        </p>
+                        <p class="main-courses__programs__item__duration">
+                            24 месяца
+                        </p>
+                    </div>
+                    <div class="main-courses__programs__item yellow">
+                        <h3 class="main-courses__programs__item__name">
+                            Программа
+                        </h3>
+                        <div class="main-courses__programs__item__title-block">
+                            <svg class="main-courses__programs__item__img" xmlns="http://www.w3.org/2000/svg" width="27" height="43" viewBox="0 0 27 43" fill="none">
+                                <rect x="1" y="1.40625" width="24.0406" height="40" rx="3" stroke="#00093C" stroke-width="2"/>
+                                <path d="M12.0342 37.4102H14.0342" stroke="#00093C" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M15.0415 29.4711L21.0297 29.4709" stroke="#00093C" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M18.0355 26.4769L18.0356 32.4651" stroke="#00093C" stroke-width="2" stroke-linecap="round"/>
+                                <mask id="path-5-inside-1_64_7723" fill="white">
+                                    <rect x="4.04736" y="5.38672" width="7.90212" height="7.90212" rx="1"/>
+                                </mask>
+                                <rect x="4.04736" y="5.38672" width="7.90212" height="7.90212" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-5-inside-1_64_7723)"/>
+                                <mask id="path-6-inside-2_64_7723" fill="white">
+                                    <rect x="14.0342" y="5.38672" width="8.00441" height="8.00441" rx="1"/>
+                                </mask>
+                                <rect x="14.0342" y="5.38672" width="8.00441" height="8.00441" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-6-inside-2_64_7723)"/>
+                                <mask id="path-7-inside-3_64_7723" fill="white">
+                                    <rect x="4.04736" y="15.4534" width="7.90212" height="7.90212" rx="1"/>
+                                </mask>
+                                <rect x="4.04736" y="15.4534" width="7.90212" height="7.90212" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-7-inside-3_64_7723)"/>
+                                <mask id="path-8-inside-4_64_7723" fill="white">
+                                    <rect x="14.0342" y="15.4534" width="8.00441" height="8.00441" rx="1"/>
+                                </mask>
+                                <rect x="14.0342" y="15.4534" width="8.00441" height="8.00441" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-8-inside-4_64_7723)"/>
+                                <mask id="path-9-inside-5_64_7723" fill="white">
+                                    <rect x="4.04736" y="25.5198" width="7.90212" height="7.90212" rx="1"/>
+                                </mask>
+                                <rect x="4.04736" y="25.5198" width="7.90212" height="7.90212" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-9-inside-5_64_7723)"/>
+                            </svg>
+                            <h2 class="main-courses__programs__item__title">
+                                «Разработка мобильных приложений»
+                            </h2>
+                        </div>
+                        <p class="main-courses__programs__item__description">
+                            Разработчик мобильных приложений создаёт приложения, которыми люди ежедневно пользуются
+                            на смартфонах, умных часах и планшетах.
+                        </p>
+                        <p class="main-courses__programs__item__duration">
+                            24 месяца
+                        </p>
+                    </div>
+                    <div class="main-courses__programs__item purple">
+                        <h3 class="main-courses__programs__item__name">
+                            Программа
+                        </h3>
+                        <div class="main-courses__programs__item__title-block">
+                            <svg class="main-courses__programs__item__img" xmlns="http://www.w3.org/2000/svg" width="27" height="43" viewBox="0 0 27 43" fill="none">
+                                <rect x="1" y="1.40625" width="24.0406" height="40" rx="3" stroke="#00093C" stroke-width="2"/>
+                                <path d="M12.0342 37.4102H14.0342" stroke="#00093C" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M15.0415 29.4711L21.0297 29.4709" stroke="#00093C" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M18.0355 26.4769L18.0356 32.4651" stroke="#00093C" stroke-width="2" stroke-linecap="round"/>
+                                <mask id="path-5-inside-1_64_7723" fill="white">
+                                    <rect x="4.04736" y="5.38672" width="7.90212" height="7.90212" rx="1"/>
+                                </mask>
+                                <rect x="4.04736" y="5.38672" width="7.90212" height="7.90212" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-5-inside-1_64_7723)"/>
+                                <mask id="path-6-inside-2_64_7723" fill="white">
+                                    <rect x="14.0342" y="5.38672" width="8.00441" height="8.00441" rx="1"/>
+                                </mask>
+                                <rect x="14.0342" y="5.38672" width="8.00441" height="8.00441" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-6-inside-2_64_7723)"/>
+                                <mask id="path-7-inside-3_64_7723" fill="white">
+                                    <rect x="4.04736" y="15.4534" width="7.90212" height="7.90212" rx="1"/>
+                                </mask>
+                                <rect x="4.04736" y="15.4534" width="7.90212" height="7.90212" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-7-inside-3_64_7723)"/>
+                                <mask id="path-8-inside-4_64_7723" fill="white">
+                                    <rect x="14.0342" y="15.4534" width="8.00441" height="8.00441" rx="1"/>
+                                </mask>
+                                <rect x="14.0342" y="15.4534" width="8.00441" height="8.00441" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-8-inside-4_64_7723)"/>
+                                <mask id="path-9-inside-5_64_7723" fill="white">
+                                    <rect x="4.04736" y="25.5198" width="7.90212" height="7.90212" rx="1"/>
+                                </mask>
+                                <rect x="4.04736" y="25.5198" width="7.90212" height="7.90212" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-9-inside-5_64_7723)"/>
+                            </svg>
+                            <h2 class="main-courses__programs__item__title">
+                                «Разработка мобильных приложений»
+                            </h2>
+                        </div>
+                        <p class="main-courses__programs__item__description">
+                            Разработчик мобильных приложений создаёт приложения, которыми люди ежедневно пользуются
+                            на смартфонах, умных часах и планшетах.
+                        </p>
+                        <p class="main-courses__programs__item__duration">
+                            24 месяца
+                        </p>
+                    </div>
+                    <div class="main-courses__programs__item green sale">
+                        <h3 class="main-courses__programs__item__name">
+                            Программа
+                        </h3>
+                        <div class="main-courses__programs__item__title-block">
+                            <svg class="main-courses__programs__item__img" xmlns="http://www.w3.org/2000/svg" width="27" height="43" viewBox="0 0 27 43" fill="none">
+                                <rect x="1" y="1.40625" width="24.0406" height="40" rx="3" stroke="#00093C" stroke-width="2"/>
+                                <path d="M12.0342 37.4102H14.0342" stroke="#00093C" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M15.0415 29.4711L21.0297 29.4709" stroke="#00093C" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M18.0355 26.4769L18.0356 32.4651" stroke="#00093C" stroke-width="2" stroke-linecap="round"/>
+                                <mask id="path-5-inside-1_64_7723" fill="white">
+                                    <rect x="4.04736" y="5.38672" width="7.90212" height="7.90212" rx="1"/>
+                                </mask>
+                                <rect x="4.04736" y="5.38672" width="7.90212" height="7.90212" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-5-inside-1_64_7723)"/>
+                                <mask id="path-6-inside-2_64_7723" fill="white">
+                                    <rect x="14.0342" y="5.38672" width="8.00441" height="8.00441" rx="1"/>
+                                </mask>
+                                <rect x="14.0342" y="5.38672" width="8.00441" height="8.00441" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-6-inside-2_64_7723)"/>
+                                <mask id="path-7-inside-3_64_7723" fill="white">
+                                    <rect x="4.04736" y="15.4534" width="7.90212" height="7.90212" rx="1"/>
+                                </mask>
+                                <rect x="4.04736" y="15.4534" width="7.90212" height="7.90212" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-7-inside-3_64_7723)"/>
+                                <mask id="path-8-inside-4_64_7723" fill="white">
+                                    <rect x="14.0342" y="15.4534" width="8.00441" height="8.00441" rx="1"/>
+                                </mask>
+                                <rect x="14.0342" y="15.4534" width="8.00441" height="8.00441" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-8-inside-4_64_7723)"/>
+                                <mask id="path-9-inside-5_64_7723" fill="white">
+                                    <rect x="4.04736" y="25.5198" width="7.90212" height="7.90212" rx="1"/>
+                                </mask>
+                                <rect x="4.04736" y="25.5198" width="7.90212" height="7.90212" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-9-inside-5_64_7723)"/>
+                            </svg>
+                            <h2 class="main-courses__programs__item__title">
+                                «Разработка мобильных приложений»
+                            </h2>
+                        </div>
+                        <p class="main-courses__programs__item__description">
+                            Разработчик мобильных приложений создаёт приложения, которыми люди ежедневно пользуются
+                            на смартфонах, умных часах и планшетах.
+                        </p>
+                        <p class="main-courses__programs__item__duration">
+                            24 месяца
+                        </p>
+                    </div>
+                    <div class="main-courses__programs__item blue sale">
+                        <h3 class="main-courses__programs__item__name">
+                            Программа
+                        </h3>
+                        <div class="main-courses__programs__item__title-block">
+                            <svg class="main-courses__programs__item__img" xmlns="http://www.w3.org/2000/svg" width="27" height="43" viewBox="0 0 27 43" fill="none">
+                                <rect x="1" y="1.40625" width="24.0406" height="40" rx="3" stroke="#00093C" stroke-width="2"/>
+                                <path d="M12.0342 37.4102H14.0342" stroke="#00093C" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M15.0415 29.4711L21.0297 29.4709" stroke="#00093C" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M18.0355 26.4769L18.0356 32.4651" stroke="#00093C" stroke-width="2" stroke-linecap="round"/>
+                                <mask id="path-5-inside-1_64_7723" fill="white">
+                                    <rect x="4.04736" y="5.38672" width="7.90212" height="7.90212" rx="1"/>
+                                </mask>
+                                <rect x="4.04736" y="5.38672" width="7.90212" height="7.90212" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-5-inside-1_64_7723)"/>
+                                <mask id="path-6-inside-2_64_7723" fill="white">
+                                    <rect x="14.0342" y="5.38672" width="8.00441" height="8.00441" rx="1"/>
+                                </mask>
+                                <rect x="14.0342" y="5.38672" width="8.00441" height="8.00441" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-6-inside-2_64_7723)"/>
+                                <mask id="path-7-inside-3_64_7723" fill="white">
+                                    <rect x="4.04736" y="15.4534" width="7.90212" height="7.90212" rx="1"/>
+                                </mask>
+                                <rect x="4.04736" y="15.4534" width="7.90212" height="7.90212" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-7-inside-3_64_7723)"/>
+                                <mask id="path-8-inside-4_64_7723" fill="white">
+                                    <rect x="14.0342" y="15.4534" width="8.00441" height="8.00441" rx="1"/>
+                                </mask>
+                                <rect x="14.0342" y="15.4534" width="8.00441" height="8.00441" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-8-inside-4_64_7723)"/>
+                                <mask id="path-9-inside-5_64_7723" fill="white">
+                                    <rect x="4.04736" y="25.5198" width="7.90212" height="7.90212" rx="1"/>
+                                </mask>
+                                <rect x="4.04736" y="25.5198" width="7.90212" height="7.90212" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-9-inside-5_64_7723)"/>
+                            </svg>
+                            <h2 class="main-courses__programs__item__title">
+                                «Разработка мобильных приложений»
+                            </h2>
+                        </div>
+                        <p class="main-courses__programs__item__description">
+                            Разработчик мобильных приложений создаёт приложения, которыми люди ежедневно пользуются
+                            на смартфонах, умных часах и планшетах.
+                        </p>
+                        <p class="main-courses__programs__item__duration">
+                            24 месяца
+                        </p>
+                    </div>
+                    <div class="main-courses__programs__item dark-blue">
+                        <h3 class="main-courses__programs__item__name">
+                            Программа
+                        </h3>
+                        <div class="main-courses__programs__item__title-block">
+                            <svg class="main-courses__programs__item__img" xmlns="http://www.w3.org/2000/svg" width="27" height="43" viewBox="0 0 27 43" fill="none">
+                                <rect x="1" y="1.40625" width="24.0406" height="40" rx="3" stroke="#00093C" stroke-width="2"/>
+                                <path d="M12.0342 37.4102H14.0342" stroke="#00093C" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M15.0415 29.4711L21.0297 29.4709" stroke="#00093C" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M18.0355 26.4769L18.0356 32.4651" stroke="#00093C" stroke-width="2" stroke-linecap="round"/>
+                                <mask id="path-5-inside-1_64_7723" fill="white">
+                                    <rect x="4.04736" y="5.38672" width="7.90212" height="7.90212" rx="1"/>
+                                </mask>
+                                <rect x="4.04736" y="5.38672" width="7.90212" height="7.90212" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-5-inside-1_64_7723)"/>
+                                <mask id="path-6-inside-2_64_7723" fill="white">
+                                    <rect x="14.0342" y="5.38672" width="8.00441" height="8.00441" rx="1"/>
+                                </mask>
+                                <rect x="14.0342" y="5.38672" width="8.00441" height="8.00441" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-6-inside-2_64_7723)"/>
+                                <mask id="path-7-inside-3_64_7723" fill="white">
+                                    <rect x="4.04736" y="15.4534" width="7.90212" height="7.90212" rx="1"/>
+                                </mask>
+                                <rect x="4.04736" y="15.4534" width="7.90212" height="7.90212" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-7-inside-3_64_7723)"/>
+                                <mask id="path-8-inside-4_64_7723" fill="white">
+                                    <rect x="14.0342" y="15.4534" width="8.00441" height="8.00441" rx="1"/>
+                                </mask>
+                                <rect x="14.0342" y="15.4534" width="8.00441" height="8.00441" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-8-inside-4_64_7723)"/>
+                                <mask id="path-9-inside-5_64_7723" fill="white">
+                                    <rect x="4.04736" y="25.5198" width="7.90212" height="7.90212" rx="1"/>
+                                </mask>
+                                <rect x="4.04736" y="25.5198" width="7.90212" height="7.90212" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-9-inside-5_64_7723)"/>
+                            </svg>
+                            <h2 class="main-courses__programs__item__title">
+                                «Разработка мобильных приложений»
+                            </h2>
+                        </div>
+                        <p class="main-courses__programs__item__description">
+                            Разработчик мобильных приложений создаёт приложения, которыми люди ежедневно пользуются
+                            на смартфонах, умных часах и планшетах.
+                        </p>
+                        <p class="main-courses__programs__item__duration">
+                            24 месяца
+                        </p>
+                    </div>
+                    <div class="main-courses__programs__item warm-yellow">
+                        <h3 class="main-courses__programs__item__name">
+                            Программа
+                        </h3>
+                        <div class="main-courses__programs__item__title-block">
+                            <svg class="main-courses__programs__item__img" xmlns="http://www.w3.org/2000/svg" width="27" height="43" viewBox="0 0 27 43" fill="none">
+                                <rect x="1" y="1.40625" width="24.0406" height="40" rx="3" stroke="#00093C" stroke-width="2"/>
+                                <path d="M12.0342 37.4102H14.0342" stroke="#00093C" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M15.0415 29.4711L21.0297 29.4709" stroke="#00093C" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M18.0355 26.4769L18.0356 32.4651" stroke="#00093C" stroke-width="2" stroke-linecap="round"/>
+                                <mask id="path-5-inside-1_64_7723" fill="white">
+                                    <rect x="4.04736" y="5.38672" width="7.90212" height="7.90212" rx="1"/>
+                                </mask>
+                                <rect x="4.04736" y="5.38672" width="7.90212" height="7.90212" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-5-inside-1_64_7723)"/>
+                                <mask id="path-6-inside-2_64_7723" fill="white">
+                                    <rect x="14.0342" y="5.38672" width="8.00441" height="8.00441" rx="1"/>
+                                </mask>
+                                <rect x="14.0342" y="5.38672" width="8.00441" height="8.00441" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-6-inside-2_64_7723)"/>
+                                <mask id="path-7-inside-3_64_7723" fill="white">
+                                    <rect x="4.04736" y="15.4534" width="7.90212" height="7.90212" rx="1"/>
+                                </mask>
+                                <rect x="4.04736" y="15.4534" width="7.90212" height="7.90212" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-7-inside-3_64_7723)"/>
+                                <mask id="path-8-inside-4_64_7723" fill="white">
+                                    <rect x="14.0342" y="15.4534" width="8.00441" height="8.00441" rx="1"/>
+                                </mask>
+                                <rect x="14.0342" y="15.4534" width="8.00441" height="8.00441" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-8-inside-4_64_7723)"/>
+                                <mask id="path-9-inside-5_64_7723" fill="white">
+                                    <rect x="4.04736" y="25.5198" width="7.90212" height="7.90212" rx="1"/>
+                                </mask>
+                                <rect x="4.04736" y="25.5198" width="7.90212" height="7.90212" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-9-inside-5_64_7723)"/>
+                            </svg>
+                            <h2 class="main-courses__programs__item__title">
+                                «Разработка мобильных приложений»
+                            </h2>
+                        </div>
+                        <p class="main-courses__programs__item__description">
+                            Разработчик мобильных приложений создаёт приложения, которыми люди ежедневно пользуются
+                            на смартфонах, умных часах и планшетах.
+                        </p>
+                        <p class="main-courses__programs__item__duration">
+                            24 месяца
+                        </p>
+                    </div>
+                    <div class="main-courses__programs__item pink">
+                        <h3 class="main-courses__programs__item__name">
+                            Программа
+                        </h3>
+                        <div class="main-courses__programs__item__title-block">
+                            <svg class="main-courses__programs__item__img" xmlns="http://www.w3.org/2000/svg" width="27" height="43" viewBox="0 0 27 43" fill="none">
+                                <rect x="1" y="1.40625" width="24.0406" height="40" rx="3" stroke="#00093C" stroke-width="2"/>
+                                <path d="M12.0342 37.4102H14.0342" stroke="#00093C" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M15.0415 29.4711L21.0297 29.4709" stroke="#00093C" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M18.0355 26.4769L18.0356 32.4651" stroke="#00093C" stroke-width="2" stroke-linecap="round"/>
+                                <mask id="path-5-inside-1_64_7723" fill="white">
+                                    <rect x="4.04736" y="5.38672" width="7.90212" height="7.90212" rx="1"/>
+                                </mask>
+                                <rect x="4.04736" y="5.38672" width="7.90212" height="7.90212" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-5-inside-1_64_7723)"/>
+                                <mask id="path-6-inside-2_64_7723" fill="white">
+                                    <rect x="14.0342" y="5.38672" width="8.00441" height="8.00441" rx="1"/>
+                                </mask>
+                                <rect x="14.0342" y="5.38672" width="8.00441" height="8.00441" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-6-inside-2_64_7723)"/>
+                                <mask id="path-7-inside-3_64_7723" fill="white">
+                                    <rect x="4.04736" y="15.4534" width="7.90212" height="7.90212" rx="1"/>
+                                </mask>
+                                <rect x="4.04736" y="15.4534" width="7.90212" height="7.90212" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-7-inside-3_64_7723)"/>
+                                <mask id="path-8-inside-4_64_7723" fill="white">
+                                    <rect x="14.0342" y="15.4534" width="8.00441" height="8.00441" rx="1"/>
+                                </mask>
+                                <rect x="14.0342" y="15.4534" width="8.00441" height="8.00441" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-8-inside-4_64_7723)"/>
+                                <mask id="path-9-inside-5_64_7723" fill="white">
+                                    <rect x="4.04736" y="25.5198" width="7.90212" height="7.90212" rx="1"/>
+                                </mask>
+                                <rect x="4.04736" y="25.5198" width="7.90212" height="7.90212" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-9-inside-5_64_7723)"/>
+                            </svg>
+                            <h2 class="main-courses__programs__item__title">
+                                «Разработка мобильных приложений»
+                            </h2>
+                        </div>
+                        <p class="main-courses__programs__item__description">
+                            Разработчик мобильных приложений создаёт приложения, которыми люди ежедневно пользуются
+                            на смартфонах, умных часах и планшетах.
+                        </p>
+                        <p class="main-courses__programs__item__duration">
+                            24 месяца
+                        </p>
+                    </div>
+                    <div class="main-courses__programs__item purple">
+                        <h3 class="main-courses__programs__item__name">
+                            Программа
+                        </h3>
+                        <div class="main-courses__programs__item__title-block">
+                            <svg class="main-courses__programs__item__img" xmlns="http://www.w3.org/2000/svg" width="27" height="43" viewBox="0 0 27 43" fill="none">
+                                <rect x="1" y="1.40625" width="24.0406" height="40" rx="3" stroke="#00093C" stroke-width="2"/>
+                                <path d="M12.0342 37.4102H14.0342" stroke="#00093C" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M15.0415 29.4711L21.0297 29.4709" stroke="#00093C" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M18.0355 26.4769L18.0356 32.4651" stroke="#00093C" stroke-width="2" stroke-linecap="round"/>
+                                <mask id="path-5-inside-1_64_7723" fill="white">
+                                    <rect x="4.04736" y="5.38672" width="7.90212" height="7.90212" rx="1"/>
+                                </mask>
+                                <rect x="4.04736" y="5.38672" width="7.90212" height="7.90212" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-5-inside-1_64_7723)"/>
+                                <mask id="path-6-inside-2_64_7723" fill="white">
+                                    <rect x="14.0342" y="5.38672" width="8.00441" height="8.00441" rx="1"/>
+                                </mask>
+                                <rect x="14.0342" y="5.38672" width="8.00441" height="8.00441" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-6-inside-2_64_7723)"/>
+                                <mask id="path-7-inside-3_64_7723" fill="white">
+                                    <rect x="4.04736" y="15.4534" width="7.90212" height="7.90212" rx="1"/>
+                                </mask>
+                                <rect x="4.04736" y="15.4534" width="7.90212" height="7.90212" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-7-inside-3_64_7723)"/>
+                                <mask id="path-8-inside-4_64_7723" fill="white">
+                                    <rect x="14.0342" y="15.4534" width="8.00441" height="8.00441" rx="1"/>
+                                </mask>
+                                <rect x="14.0342" y="15.4534" width="8.00441" height="8.00441" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-8-inside-4_64_7723)"/>
+                                <mask id="path-9-inside-5_64_7723" fill="white">
+                                    <rect x="4.04736" y="25.5198" width="7.90212" height="7.90212" rx="1"/>
+                                </mask>
+                                <rect x="4.04736" y="25.5198" width="7.90212" height="7.90212" rx="1" stroke="#00093C" stroke-width="4" mask="url(#path-9-inside-5_64_7723)"/>
+                            </svg>
+                            <h2 class="main-courses__programs__item__title">
+                                «Разработка мобильных приложений»
+                            </h2>
+                        </div>
+                        <p class="main-courses__programs__item__description">
+                            Разработчик мобильных приложений создаёт приложения, которыми люди ежедневно пользуются
+                            на смартфонах, умных часах и планшетах.
+                        </p>
+                        <p class="main-courses__programs__item__duration">
+                            24 месяца
+                        </p>
+                    </div>
+                </section>
+
+            </div>
+        </section>
+    </div>
+    <section class="main__index-help">
+        @@include('html/footer-help-block.html')
+    </section>
 </main>
 
 </body>
