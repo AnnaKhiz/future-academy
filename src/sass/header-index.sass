@@ -1,9 +1,12 @@
 @import "var"
 @import "mixins"
 
-.header
+.header-block
   padding: 20px 0
-  background-color: $color-white
+  &.white
+    background-color: $color-white
+  &.blue
+    background-color: $color-dark-blue
   @media screen and (max-width: 768px)
     padding: 10px
 
@@ -14,6 +17,12 @@
     align-items: center
     @media screen and (max-width: 1080px)
       display: block
+    &-link
+      position: relative
+      &:hover
+        @include line-gradient-pseudo (-44px, 0, 100%)
+      &.colored-line
+        @include line-gradient-pseudo (-44px, 0, 100%)
 
     &-logo
       & svg
@@ -40,6 +49,18 @@
         @include link-header-menu
         & svg
           margin-right: 9px
+      &.white
+        & li a
+          color: $color-white
+        & li svg > rect
+          stroke: $color-white
+      &.blue
+        & li a
+          color: $color-dark-blue
+        & li svg > rect
+          stroke: $color-dark-blue
+
+
     &-contacts
       display: flex
       align-items: center
@@ -56,6 +77,19 @@
           font: 500 normal 1rem/1.625rem 'Montserrat'
         &.underline
           text-decoration: underline
+          &.white
+            color: $color-white
+          &.blue
+            color: $color-dark-blue
+      &.white
+        & li a
+          color: $color-white
+        & svg rect, & svg path
+          stroke: $color-white
+
+      &.blue
+        & li a
+          color: $color-dark-blue
 
       &-link
         position: relative
@@ -69,6 +103,16 @@
         &.burger__list-menu-submenu-link
           max-width: 100%
           width: 100%
+        &.white
+          & svg path
+            stroke: $color-white
+          & svg circle
+            fill: $color-white
+        &.blue
+          & svg path
+            stroke: $color-dark-blue
+          & svg circle
+            fill: $color-dark-blue
 
       &-submenu
         @include colored-shadow
@@ -91,6 +135,10 @@
           margin-bottom: 25px
           & svg
             cursor: pointer
+          &.blue
+            & svg path
+              stroke: $color-dark-blue
+
         &.hidden
           display: none
         &-flex
@@ -116,6 +164,9 @@
             @include text-parameters (400, .875rem, 1.75rem, $color-dark-blue)
             &:hover
               text-decoration: underline
+          &.blue
+            & li a
+              color: $color-black
         &-label
           @include label-text-medium
           @media screen and (max-width: 768px)
