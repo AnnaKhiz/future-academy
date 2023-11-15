@@ -12,11 +12,17 @@
     })
 <main class="main-courses">
     <div class="container-main main-courses">
-        <h1 class="main-courses__header">
-            Все программы обучения
-        </h1>
+        <div class="main-courses__main-title">
+            <h1 class="main-courses__header">
+                Все программы обучения
+            </h1>
+            <div class="main-courses__hidden-menu hidden" id="aside-menu-button">
+                <img src="./img/burger-aside-menu.png" alt="icon menu aside burger">
+            </div>
+        </div>
+        
         <section class="main-courses__container-flex">
-            <aside class="main-courses__aside">
+            <aside class="main-courses__aside" id="aside-block">
 
                 <form class="main-courses__aside__complication" action="#" id="complication-form">
                     <h2 class="main-courses__aside__label">
@@ -507,13 +513,15 @@
                         </p>
                     </div>
                 </section>
-
             </div>
         </section>
     </div>
-    <section class="main__index-help">
+
+    <section class="main-courses__help main__index-help">
         @@include('html/footer-help-block.html')
     </section>
+
+
 </main>
 
 </body>

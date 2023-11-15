@@ -4,6 +4,7 @@ import * as video from "./modules/index-play.js";
 import * as swiper from "./modules/swiper.js";
 import * as burger from "./modules/burger.js";
 import * as range from './modules/range-slider.js';
+import * as aside from './modules/aside-menu.js';
 
 
 
@@ -23,6 +24,10 @@ if (document.querySelector('.main__index-feedback-swiper')) {
 if (document.getElementById('slider')) {
     range.rangeSlider();
 }
+if (document.getElementById('aside-block')) {
+    aside.toggleAsideMenu();
+}
+
 
 
 
