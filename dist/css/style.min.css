@@ -3203,6 +3203,22 @@ ul {
   line-height: 1.0625rem;
   color: #000000;
 }
+.main-courses__aside__radio-block > input {
+  position: relative;
+  margin-right: 15px;
+}
+.main-courses__aside__radio-block > input:before {
+  position: absolute;
+  top: -6%;
+  left: 0;
+  content: url("../img/checkbox.jpg");
+}
+.main-courses__aside__radio-block > input:checked:after {
+  position: absolute;
+  top: -6%;
+  left: 0;
+  content: url("../img/checkbox-checked.png");
+}
 .main-courses__aside__radio-block > input:checked + label {
   font-weight: 700;
   font-style: normal;
@@ -3244,6 +3260,29 @@ ul {
   line-height: 1.0625rem;
   color: #333;
   margin-bottom: 16px;
+}
+.main-courses__aside__range .noUi-connect {
+  background: linear-gradient(90deg, #F7941D 0%, #27AAE1 100%);
+}
+.main-courses__aside__range.noUi-horizontal {
+  height: 4px;
+  width: 90%;
+}
+.main-courses__aside__range .noUi-handle:before, .main-courses__aside__range .noUi-handle:after {
+  content: none;
+}
+.main-courses__aside__range.noUi-horizontal .noUi-handle {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  right: -17px;
+  top: -9px;
+}
+.main-courses__aside__range.noUi-horizontal .noUi-handle:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: url("../img/checkbox-checked.png");
 }
 .main-courses__container-flex {
   display: flex;

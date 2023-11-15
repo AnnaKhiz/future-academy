@@ -7,7 +7,8 @@
     @@include('html/header.html',{
     "color-icons":"white",
     "color-bg":"blue",
-    "color-underline":"colored-line"
+    "color-underline":"colored-line",
+    "before-all":"before-all"
     })
 <main class="main-courses">
     <div class="container-main main-courses">
@@ -64,7 +65,7 @@
                     <h3 class="main-courses__aside__label-small">
                         от 1 до 24 месяцев
                     </h3>
-                    <input type="range" name="duration" id="duration-range">
+                    <div id="slider" class="main-courses__aside__range"></div>
                 </form>
                 <div class="main-courses__aside__banner">
                     <img src="./img/aside-banner.png" alt="aside banner">

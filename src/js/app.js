@@ -3,6 +3,9 @@ import * as header from "./modules/address-menu.js";
 import * as video from "./modules/index-play.js";
 import * as swiper from "./modules/swiper.js";
 import * as burger from "./modules/burger.js";
+import * as range from './modules/range-slider.js';
+
+
 
 burger.callBurgerMenu();
 flsFunctions.isWebp();
@@ -14,8 +17,13 @@ if (document.getElementById('index-video-container')) {
 if (document.querySelector('.main__index-feedback-swiper')) {
     swiper.swipeIndexSwiper();
     swiper.dragPosition();
-    swiper.setBgSize()
+    swiper.setBgSize();
 }
+
+if (document.getElementById('slider')) {
+    range.rangeSlider();
+}
+
 
 
 
