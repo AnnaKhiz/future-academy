@@ -23,5 +23,18 @@ export function callAddressMenu() {
     closeLink.forEach((e) => {
         showHideMenu(e)
     });
+}
 
+
+export function styleActiveLink() {
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const address = [...document.querySelectorAll('[data-menu-link]')]
+                        .map(element => element.dataset.menuLink);
+        address.forEach((link) => {
+            if (window.location.toString().includes(link)) {
+                const headerLinksEl = document.querySelector(`[data-menu-link="${link}"]`);
+                headerLinksEl.classList.add('colored-line')
+            }
+        })
+    })
 }

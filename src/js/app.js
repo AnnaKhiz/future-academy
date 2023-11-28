@@ -11,6 +11,7 @@ import * as aside from './modules/aside-menu.js';
 burger.callBurgerMenu();
 flsFunctions.isWebp();
 header.callAddressMenu();
+header.styleActiveLink();
 if (document.getElementById('index-video-container')) {
     video.hideLayers();
 }
