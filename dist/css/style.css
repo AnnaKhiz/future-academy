@@ -4192,6 +4192,9 @@ ul {
   max-width: 220px;
   overflow: hidden;
 }
+.main-career__team {
+  position: relative;
+}
 
 .container-main {
   max-width: 1210px;
