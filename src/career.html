@@ -1,24 +1,76 @@
 <!doctype html>
 <html lang="en">
-@@include('html/head.html',{
-"title":"Карьера"
-})
+  @@include('html/head.html',{
+    "title":"Карьера"
+  })
 <body>
-@@include('html/header.html',{
-"color-icons":"white",
-"color-bg":"blue",
-"color-underline":"colored-line",
-"before-all":"before-all"
-})
-<div class="main main-events">
-  <div class="container-main">
+    @@include('html/header.html',{
+    "color-icons":"blue",
+    "color-bg":"white",
+    "color-underline":"colored-line",
+    "before-all":"before-all"
+  })
+<div class="main main-career">
 
-  </div>
+    <section class="main-career__banner">
+        <div class="container-main career">
+            <div class="main-career__info">
+                <h1 class="main-career__title">
+                    Веб-разработчик
+                </h1>
+                <p class="main-career__description">
+                    Программа для тех кто...Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Pellentesque quis tellus feugiat,
+                    magna et, scelerisque leo. In scelerisque pulvinar sem, et gravida
+                    mi tincidunt nec.
+                </p>
+                <div class="main-career__details-block">
+                    <div class="main-career__details-block__term">
+                        <p class="main-career__details-block__description">
+                            Срок обучения: <br>
+                            5 лет
+                        </p>
+                    </div>
+                    <div class="main-career__details-block__schedule">
+                        <p class="main-career__details-block__description">
+                            Режим занятий: <br>
+                            2 раза в неделю по 2 академических часа
+                        </p>
+                    </div>
+                </div>
+                <p class="main-career__price">
+                    от  4 350 ₽ в месяц
+                </p>
+                <p class="main-career__sale">
+                    1 занятие бесплатное
+                </p>
+                <div class="main-career__button">
+                    <a href="#">
+                        Записаться на пробное занятие
+                    </a>
+                </div>
+
+            </div>
+            <div class="main-career__photo">
+                <img src="./img/career-banner.png" alt="banner man with laptop">
+            </div>
+        </div>
+        <img src="./img/icon-plus.png" alt="icon plus" class="main-career__icon icon-1">
+        <img src="./img/line-left.png" alt="icon line" class="main-career__icon icon-2">
+        <img src="./img/icon-video-line.png" alt="icon line" class="main-career__icon icon-3">
+        <img src="./img/icon-left-line.png" alt="icon line" class="main-career__icon icon-4">
+        <img src="./img/icon-triangle.png" alt="icon line" class="main-career__icon icon-5">
+        <img src="./img/icon-circle.png" alt="icon line" class="main-career__icon icon-6">
+        <img src="./img/icon-plus-small.png" alt="icon line" class="main-career__icon icon-7">
+        <img src="./img/icon-triangle-big.png" alt="icon line" class="main-career__icon icon-8">
+        <img src="./img/icon-line-right.png" alt="icon line" class="main-career__icon icon-9">
+    </section>
+
 </div>
 
 
-@@include('html/footer.html',{})
-@@include('html/burger.html',{})
+  @@include('html/footer.html',{})
+  @@include('html/burger.html',{})
 </body>
 
 </html>

@@ -8,6 +8,7 @@
 @import "footer-index"
 @import "main-courses"
 @import "main-events"
+@import "main-career"
 
 //*
 //  border: 1px solid black
@@ -24,6 +25,10 @@
   &.main-events
     @media screen and (max-width: 768px)
       padding: 0
+  &.career
+    display: flex
+    justify-content: space-between
+    align-items: center
 body
   background-color: $bg-gray
 

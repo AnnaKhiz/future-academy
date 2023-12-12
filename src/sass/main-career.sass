@@ -1,0 +1,57 @@
+@import "var"
+@import "mixins"
+
+.main-career
+  &__banner
+    position: relative
+    margin-bottom: 20px
+    background-color: $color-dark-blue
+
+  &__title
+    @include text-parameters (700, 2.62rem, 3.19rem, $color-white)
+    max-width: 400px
+    margin-bottom: 6px
+    overflow: hidden
+  &__description
+    @include text-parameters (500, 1rem, 1.25rem, $color-white)
+    max-width: 640px
+    margin-bottom: 51px
+    overflow: hidden
+  &__details-block
+    display: flex
+    justify-content: flex-start
+    align-items: start
+    column-gap: 30px
+    margin-bottom: 35px
+
+    &__description
+      @include text-parameters (500, 0.88rem, 1.06rem, $color-white)
+      position: relative
+      &:before
+        @include line-gradient-pseudo (unset, 0, 100px)
+        top: -7px
+        height: 2px
+
+
+
+  &__price, &__sale
+    @include text-parameters (700, 1.75rem, 2.13rem, $color-white)
+    max-width: 515px
+    //overflow: hidden
+  &__price
+    position: relative
+    max-width: 290px
+    margin-bottom: 35px
+    &:before
+      @include line-gradient-pseudo (unset, 0, 100px)
+      top: -7px
+      height: 2px
+  &__sale
+    margin-bottom: 14px
+  &__button
+    @include button-orange
+  &__icon
+    display: none
+    position: absolute
+    top: 0
+    left: 0

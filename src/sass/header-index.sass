@@ -20,9 +20,11 @@
     &-link
       position: relative
       &:hover
-        @include line-gradient-pseudo (-44px, 0, 100%)
+        &:after
+          @include line-gradient-pseudo (-44px, 0, 100%)
       & a.colored-line
-        @include line-gradient-pseudo (-44px, 0, 100%)
+        &:after
+          @include line-gradient-pseudo (-44px, 0, 100%)
 
 
     &-logo
@@ -100,7 +102,8 @@
         align-items: center
 
         &.colored-line
-          @include line-gradient-pseudo (-44px, 0, 100%)
+          &:after
+            @include line-gradient-pseudo (-44px, 0, 100%)
 
         &.burger__list-menu-submenu-link
           max-width: 100%

@@ -276,7 +276,8 @@
 
           & li.tab > .active
             position: relative
-            @include line-gradient-pseudo (0, 0, 100%)
+            &:after
+              @include line-gradient-pseudo (0, 0, 100%)
 
           &-flex
             display: flex
