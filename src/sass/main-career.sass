@@ -97,4 +97,46 @@
         overflow: hidden
   &__video
     padding-bottom: 216px
+  &__owner
+    display: flex
+    justify-content: flex-start
+    align-items: start
+    column-gap: 120px
+    padding-bottom: 68px
+    &__pic
+      margin-bottom: 24px
+    &__name
+      @include text-parameters(700, 1.125rem, 1.375rem, $color-black)
+      margin-bottom: 12px
+    &__about
+      @include text-parameters(500, 0.875rem, 1.25rem, $color-dark-grey)
+    &__text-block
+      padding-top: 23px
+      max-width: 680px
+      overflow: hidden
+    &__text
+      @include text-parameters(400, 1rem, 1.625rem, $color-black)
+      margin-bottom: 20px
+      &.gray-text
+        font-size: 0.875rem
+        color: $color-dark-grey
+
+  &__values
+    padding-bottom: 74px
+    &__title
+      @include text-parameters(700, 2.25rem, 2.125rem, $color-black)
+      margin-bottom: 53px
+    &__container
+      display: flex
+      justify-content: flex-start
+      align-items: start
+      column-gap: 20px
+    &__image
+      margin-bottom: 25px
+    &__description
+      @include text-parameters(500, 1rem, 1.5rem, $color-black)
+      max-width: 220px
+      overflow: hidden
+
+
 
