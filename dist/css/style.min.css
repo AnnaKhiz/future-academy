@@ -3921,7 +3921,6 @@ ul {
 
 .main-career__banner {
   position: relative;
-  margin-bottom: 20px;
   background-color: #00093C;
 }
 .main-career__title {
@@ -4037,10 +4036,85 @@ ul {
   background: #FFAE4D;
 }
 .main-career__icon {
-  display: none;
   position: absolute;
-  top: 0;
-  left: 0;
+}
+.main-career__icon.icon-1 {
+  top: 10%;
+  left: 10%;
+}
+.main-career__icon.icon-2 {
+  bottom: -9%;
+  left: 6%;
+}
+.main-career__icon.icon-3 {
+  top: 36%;
+  left: 41%;
+}
+.main-career__icon.icon-4 {
+  bottom: -9%;
+  left: 35%;
+}
+.main-career__icon.icon-5 {
+  top: 5%;
+  right: 36%;
+}
+.main-career__icon.icon-6 {
+  bottom: 10%;
+  right: 38%;
+}
+.main-career__icon.icon-7 {
+  top: 27%;
+  right: 20%;
+}
+.main-career__icon.icon-8 {
+  top: 10%;
+  right: 6%;
+}
+.main-career__icon.icon-9 {
+  right: 5%;
+  bottom: -5%;
+}
+.main-career__info {
+  padding: 80px 0 142px 0;
+}
+.main-career__info__container {
+  column-gap: 50px;
+}
+.main-career__info__container__item.owl:before {
+  bottom: -90%;
+}
+.main-career__info__preferences {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  column-gap: 21px;
+  padding-top: 37px;
+}
+.main-career__info__preferences__item img {
+  margin-bottom: 18px;
+}
+.main-career__info__preferences__title {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  line-height: 1.81rem;
+  color: #000000;
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+.main-career__info__preferences__text {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Montserrat";
+  font-size: 0.88rem;
+  line-height: 1.06rem;
+  color: #000000;
+  max-width: 250px;
+  overflow: hidden;
+}
+.main-career__video {
+  padding-bottom: 216px;
 }
 
 .container-main {

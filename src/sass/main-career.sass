@@ -4,7 +4,6 @@
 .main-career
   &__banner
     position: relative
-    margin-bottom: 20px
     background-color: $color-dark-blue
 
   &__title
@@ -23,7 +22,6 @@
     align-items: start
     column-gap: 30px
     margin-bottom: 35px
-
     &__description
       @include text-parameters (500, 0.88rem, 1.06rem, $color-white)
       position: relative
@@ -31,13 +29,9 @@
         @include line-gradient-pseudo (unset, 0, 100px)
         top: -7px
         height: 2px
-
-
-
   &__price, &__sale
     @include text-parameters (700, 1.75rem, 2.13rem, $color-white)
     max-width: 515px
-    //overflow: hidden
   &__price
     position: relative
     max-width: 290px
@@ -51,7 +45,56 @@
   &__button
     @include button-orange
   &__icon
-    display: none
     position: absolute
-    top: 0
-    left: 0
+    &.icon-1
+      top: 10%
+      left: 10%
+    &.icon-2
+      bottom: -9%
+      left: 6%
+    &.icon-3
+      top: 36%
+      left: 41%
+    &.icon-4
+      bottom: -9%
+      left: 35%
+    &.icon-5
+      top: 5%
+      right: 36%
+    &.icon-6
+      bottom: 10%
+      right: 38%
+    &.icon-7
+      top: 27%
+      right: 20%
+    &.icon-8
+      top: 10%
+      right: 6%
+    &.icon-9
+      right: 5%
+      bottom: -5%
+  &__info
+    padding: 80px 0 142px 0
+    &__container
+      column-gap: 50px
+      &__item.owl:before
+        bottom: -90%
+    &__preferences
+      display: flex
+      justify-content: flex-start
+      align-items: start
+      column-gap: 21px
+      padding-top: 37px
+      &__item img
+        margin-bottom: 18px
+      &__title
+        @include text-parameters(700, 1.5rem, 1.81rem, $color-black)
+        margin-bottom: 14px
+        overflow: hidden
+      &__text
+        @include text-parameters(400, 0.88rem, 1.06rem, $color-black)
+        max-width: 250px
+        overflow: hidden
+  &__video
+    padding-bottom: 216px
+
