@@ -148,5 +148,26 @@
       text-align: center
     &__text
       text-align: center
+  &__programs
+    padding-bottom: 104px
+    &__info
+      margin-bottom: 57px
+    &__label
+      @include text-parameters (700, 2.25rem, 2.125rem, $color-black)
+      margin-bottom: 40px
+    &__benefits
+      display: flex
+      justify-content: flex-start
+      align-items: start
+      column-gap: 20px
+      row-gap: 20px
+    &__item
+      @include text-parameters (500, 1rem, 1.5rem, $color-black)
+      position: relative
+      width: 15%
+      &:before
+        @include line-gradient-pseudo (unset, 0, 100px)
+        top: -13px
+        height: 2px
 
 
