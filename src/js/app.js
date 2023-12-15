@@ -21,6 +21,7 @@ if (document.querySelector('.main__index-feedback-swiper')) {
     swiper.swipeIndexSwiper();
     swiper.dragPosition();
     swiper.setBgSize();
+    swiper.dragPositionTeam();
 }
 
 if (document.getElementById('slider')) {

@@ -187,7 +187,12 @@
         @@include('html/swiper.html',{
             "label":"Отзывы наших студентов"
         })
-        @@include('html/swiper-feedback.html')
+        <div class="main__index-feedback-swiper swiper mySwiper">
+            <div class="main__index-feedback-swiper-wraper swiper-wrapper">
+                @@include('html/swiper-feedback.html',{})
+            </div>
+        </div>
+        <div class="main__index-feedback-swiper-scrollbar swiper-scrollbar" id="scrollbar-drag"></div>
     </section>
     <section class="main__index-preferences">
         <div class="container-main">

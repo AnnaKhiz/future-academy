@@ -6,11 +6,6 @@ export function swipeIndexSwiper() {
         scrollbar: {
             el: ".swiper-scrollbar",
         },
-        // autoplay: true
-        // pagination: {
-        //     el: ".swiper-pagination",
-        //     clickable: true,
-        // },
         breakpoints: {
             300: {
                 slidesPerView: 1,
@@ -43,6 +38,13 @@ export function swipeIndexSwiper() {
 export function dragPosition() {
     document.addEventListener('DOMContentLoaded', () => {
         const dragElem = document.querySelector('#scrollbar-drag>.swiper-scrollbar-drag');
+        dragElem.style.transform = 'translate3d(0px, 0px, 0px)';
+    })
+}
+
+export function dragPositionTeam() {
+    document.addEventListener('DOMContentLoaded', () => {
+        const dragElem = document.querySelector('#scrollbar-drag-team>.swiper-scrollbar-drag');
         dragElem.style.transform = 'translate3d(0px, 0px, 0px)';
     })
 }
