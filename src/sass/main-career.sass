@@ -169,5 +169,27 @@
         @include line-gradient-pseudo (unset, 0, 100px)
         top: -13px
         height: 2px
+  &__partners
+    padding-bottom: 74px
+    &__label
+      @include text-parameters (700, 2.25rem, 2.125rem, $color-black)
+      margin-bottom: 40px
+    &__gallery
+      display: flex
+      justify-content: space-between
+      align-items: center
+      flex-wrap: wrap
+      gap: 20px
+    &__item
+      @include colored-shadow
+      position: relative
+      display: flex
+      justify-content: center
+      align-items: center
+      border-radius: 20px
+      width: 11.25rem
+      height: 7.5rem
+      background: $color-white
+
 
 
