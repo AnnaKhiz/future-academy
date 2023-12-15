@@ -191,5 +191,37 @@
       height: 7.5rem
       background: $color-white
 
-
+  &__choice
+    margin-bottom: 330px
+    &__label
+      @include text-parameters (700, 2.25rem, 2.125rem, $color-black)
+      margin-bottom: 40px
+    &__options
+      display: flex
+      justify-content: space-between
+      align-items: center
+      gap: 20px
+    &__item
+      @include colored-shadow
+      position: relative
+      padding: 22px 20px 27px
+      width: 25%
+      border-radius: 20px
+      text-align: center
+      cursor: pointer
+      & img
+        margin-bottom: 18px
+      &.blue
+        background: $color-light-blue
+      &.yellow
+        background: $color-yellow
+      &.purple
+        background: $color-violet
+      &.green
+        background: $color-green
+    &__text
+      @include text-parameters (500, 1rem, 1.5rem, $color-black)
+      text-align: center
+      min-height: 60px
+      overflow: hidden
 
