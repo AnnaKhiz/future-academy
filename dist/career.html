@@ -4,19 +4,19 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="files/bootstrap.min.css?_v=20231215222821" rel="stylesheet">
-	<script src="files/bootstrap.bundle.min.js?_v=20231215222821" defer></script>
-	<link href="files/nouislider.css?_v=20231215222821" rel="stylesheet">
-	<script src="files/nouislider.js?_v=20231215222821"></script>
+	<link href="files/bootstrap.min.css" rel="stylesheet">
+	<script src="files/bootstrap.bundle.min.js" defer></script>
+	<link href="files/nouislider.css" rel="stylesheet">
+	<script src="files/nouislider.js"></script>
 <!--	<script-->
 <!--			src="https://code.jquery.com/jquery-3.7.0.min.js"-->
 <!--			integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="-->
 <!--			crossorigin="anonymous"></script>-->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20231215222821" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20231215222821" defer></script>
-	<script src="js/app.min.js?_v=20231215222821" defer></script>
-	<link rel="stylesheet" href="css/style.min.css?_v=20231215222821">
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+	<script src="js/app.min.js" defer></script>
+	<link rel="stylesheet" href="css/style.min.css">
 	<title>Карьера</title>
 </head>
 <body>
@@ -188,7 +188,7 @@
                         </p>
                     </div>
                     <div class="main-career__details-block__schedule">
-                        <p class="main-career__details-block__description">
+                        <p class="main-career__details-block__description second">
                             Режим занятий: <br>
                             2 раза в неделю по 2 академических часа
                         </p>
@@ -208,18 +208,23 @@
 
             </div>
             <div class="main-career__photo">
-                <picture><source srcset="./img/career-banner.webp" type="image/webp"><img src="./img/career-banner.png" alt="banner man with laptop"></picture>
+                <picture>
+                    <source srcset="./img/career-banner1060.png" media="(max-width: 1060px)">
+                    <source srcset="./img/career-banner.png" media="(max-width: 1920px)">
+
+                    <img src="./img/career-banner.png" alt="banner man with laptop">
+                </picture>
             </div>
         </div>
-        <picture><source srcset="./img/icon-plus.webp" type="image/webp"><img src="./img/icon-plus.png" alt="icon plus" class="main-career__icon icon-1"></picture>
-        <picture><source srcset="./img/line-left.webp" type="image/webp"><img src="./img/line-left.png" alt="icon line" class="main-career__icon icon-2"></picture>
-        <picture><source srcset="./img/icon-center-line.webp" type="image/webp"><img src="./img/icon-center-line.png" alt="icon line" class="main-career__icon icon-3"></picture>
-        <picture><source srcset="./img/icon-left-line.webp" type="image/webp"><img src="./img/icon-left-line.png" alt="icon line" class="main-career__icon icon-4"></picture>
-        <picture><source srcset="./img/icon-triangle.webp" type="image/webp"><img src="./img/icon-triangle.png" alt="icon line" class="main-career__icon icon-5"></picture>
-        <picture><source srcset="./img/icon-circle.webp" type="image/webp"><img src="./img/icon-circle.png" alt="icon line" class="main-career__icon icon-6"></picture>
-        <picture><source srcset="./img/icon-plus-small.webp" type="image/webp"><img src="./img/icon-plus-small.png" alt="icon line" class="main-career__icon icon-7"></picture>
-        <picture><source srcset="./img/icon-triangle-big.webp" type="image/webp"><img src="./img/icon-triangle-big.png" alt="icon line" class="main-career__icon icon-8"></picture>
-        <picture><source srcset="./img/icon-line-right.webp" type="image/webp"><img src="./img/icon-line-right.png" alt="icon line" class="main-career__icon icon-9"></picture>
+        <img src="./img/icon-plus.png" alt="icon plus" class="main-career__icon icon-1">
+        <img src="./img/line-left.png" alt="icon line" class="main-career__icon icon-2">
+        <img src="./img/icon-center-line.png" alt="icon line" class="main-career__icon icon-3">
+        <img src="./img/icon-left-line.png" alt="icon line" class="main-career__icon icon-4">
+        <img src="./img/icon-triangle.png" alt="icon line" class="main-career__icon icon-5">
+        <img src="./img/icon-circle.png" alt="icon line" class="main-career__icon icon-6">
+        <img src="./img/icon-plus-small.png" alt="icon line" class="main-career__icon icon-7">
+        <img src="./img/icon-triangle-big.png" alt="icon line" class="main-career__icon icon-8">
+        <img src="./img/icon-line-right.png" alt="icon line" class="main-career__icon icon-9">
     </section>
     <div class="container-main">
         <section class="main-career__info">
@@ -276,21 +281,21 @@
         </section>
         <section class="main-career__video">
             <div class="main__index-video-container pseudo" id="index-video-container">
-    <picture><source srcset="img/pic-with-shadow-chess.webp" type="image/webp"><img class="image-cover" src="img/pic-with-shadow-chess.png" alt="image preview" id="index-video-cover"></picture>
-    <picture><source srcset="img/play.webp" type="image/webp"><img class="play" src="img/play.png" alt="icon play" id="index-video-play"></picture>
+    <img class="image-cover" src="img/pic-with-shadow-chess.png" alt="image preview" id="index-video-cover">
+    <img class="play" src="img/play.png" alt="icon play" id="index-video-play">
     <iframe id="video" src="https://www.youtube.com/embed/N3AkSS5hXMA?start=1"
             frameborder="0" allowtransparency="true" allowfullscreen allow="autoplay">
     </iframe>
-    <picture><source srcset="img/icon-triangle-big.webp" type="image/webp"><img class="main__index-video-container-icon-triangle" src="img/icon-triangle-big.png" alt="icon"></picture>
-    <picture><source srcset="img/icon-video-line.webp" type="image/webp"><img class="main__index-video-container-icon-left-line" src="img/icon-video-line.png" alt="icon"></picture>
-    <picture><source srcset="img/icon-video-line-right.webp" type="image/webp"><img class="main__index-video-container-icon-right-line" src="img/icon-video-line-right.png" alt="icon"></picture>
-    <picture><source srcset="img/icon-video-plus.webp" type="image/webp"><img class="main__index-video-container-icon-plus" src="img/icon-video-plus.png" alt="icon"></picture>
+    <img class="main__index-video-container-icon-triangle" src="img/icon-triangle-big.png" alt="icon">
+    <img class="main__index-video-container-icon-left-line" src="img/icon-video-line.png" alt="icon">
+    <img class="main__index-video-container-icon-right-line" src="img/icon-video-line-right.png" alt="icon">
+    <img class="main__index-video-container-icon-plus" src="img/icon-video-plus.png" alt="icon">
 </div>
         </section>
         <section class="main-career__owner">
             <div class="main-career__owner__photo">
                 <div class="main-career__owner__pic">
-                    <picture><source srcset="./img/owner-photo.webp" type="image/webp"><img src="./img/owner-photo.png" alt="owner photo"></picture>
+                    <img src="./img/owner-photo.png" alt="owner photo">
                 </div>
                 <p class="main-career__owner__name">
                     Имя Фамилия
@@ -371,11 +376,11 @@
         </section>
     </div>
     <section class="main-career__team main__index-feedback" id="swiper-team">
-        <picture><source srcset="img/swiper-left-line.webp" type="image/webp"><img class="main__index-feedback-icon-left-line" src="img/swiper-left-line.png" alt="image plus"></picture>
-<picture><source srcset="img/swiper-plus.webp" type="image/webp"><img class="main__index-feedback-icon-plus" src="img/swiper-plus.png" alt="image plus"></picture>
-<picture><source srcset="img/swiper-triangle.webp" type="image/webp"><img class="main__index-feedback-icon-triangle" src="img/swiper-triangle.png" alt="image plus"></picture>
-<picture><source srcset="img/swiper-top-line.webp" type="image/webp"><img class="main__index-feedback-icon-top-line" src="img/swiper-top-line.png" alt="image plus"></picture>
-<picture><source srcset="img/swiper-circle.webp" type="image/webp"><img class="main__index-feedback-icon-circle" src="img/swiper-circle.png" alt="image plus"></picture>
+        <img class="main__index-feedback-icon-left-line" src="img/swiper-left-line.png" alt="image plus">
+<img class="main__index-feedback-icon-plus" src="img/swiper-plus.png" alt="image plus">
+<img class="main__index-feedback-icon-triangle" src="img/swiper-triangle.png" alt="image plus">
+<img class="main__index-feedback-icon-top-line" src="img/swiper-top-line.png" alt="image plus">
+<img class="main__index-feedback-icon-circle" src="img/swiper-circle.png" alt="image plus">
 <h2 class="main__index-feedback-label">
     Наши люди
 </h2>
@@ -385,7 +390,7 @@
                 <div class="main__index-feedback-swiper-slide main-career__team__slide swiper-slide">
     <div class="main__index-feedback-block main-career__team__block">
         <div class="main-career__team__image">
-            <picture><source srcset="img/team-photo-1.webp" type="image/webp"><img src="img/team-photo-1.png" alt="feedback photo"></picture>
+            <img src="img/team-photo-1.png" alt="feedback photo">
         </div>
         <h3 class="main__index-feedback-flex-info-name main-career__team__name">
             Имя Фамилия
@@ -400,7 +405,7 @@
 <div class="main__index-feedback-swiper-slide main-career__team__slide swiper-slide">
     <div class="main__index-feedback-block main-career__team__block">
         <div class="main-career__team__image">
-            <picture><source srcset="img/team-photo-2.webp" type="image/webp"><img src="img/team-photo-2.png" alt="feedback photo"></picture>
+            <img src="img/team-photo-2.png" alt="feedback photo">
         </div>
         <h3 class="main__index-feedback-flex-info-name main-career__team__name">
             Имя Фамилия
@@ -415,7 +420,7 @@
 <div class="main__index-feedback-swiper-slide main-career__team__slide swiper-slide">
     <div class="main__index-feedback-block main-career__team__block">
         <div class="main-career__team__image">
-            <picture><source srcset="img/team-photo-3.webp" type="image/webp"><img src="img/team-photo-3.png" alt="feedback photo"></picture>
+            <img src="img/team-photo-3.png" alt="feedback photo">
         </div>
         <h3 class="main__index-feedback-flex-info-name main-career__team__name">
             Имя Фамилия
@@ -430,7 +435,7 @@
 <div class="main__index-feedback-swiper-slide main-career__team__slide swiper-slide">
     <div class="main__index-feedback-block main-career__team__block">
         <div class="main-career__team__image">
-            <picture><source srcset="img/team-photo-4.webp" type="image/webp"><img src="img/team-photo-4.png" alt="feedback photo"></picture>
+            <img src="img/team-photo-4.png" alt="feedback photo">
         </div>
         <h3 class="main__index-feedback-flex-info-name main-career__team__name">
             Имя Фамилия
@@ -445,7 +450,7 @@
 <div class="main__index-feedback-swiper-slide main-career__team__slide swiper-slide">
     <div class="main__index-feedback-block main-career__team__block">
         <div class="main-career__team__image">
-            <picture><source srcset="img/team-photo-5.webp" type="image/webp"><img src="img/team-photo-5.png" alt="feedback photo"></picture>
+            <img src="img/team-photo-5.png" alt="feedback photo">
         </div>
         <h3 class="main__index-feedback-flex-info-name main-career__team__name">
             Имя Фамилия
@@ -460,7 +465,7 @@
 <div class="main__index-feedback-swiper-slide main-career__team__slide swiper-slide">
     <div class="main__index-feedback-block main-career__team__block">
         <div class="main-career__team__image">
-            <picture><source srcset="img/team-photo-3.webp" type="image/webp"><img src="img/team-photo-3.png" alt="feedback photo"></picture>
+            <img src="img/team-photo-3.png" alt="feedback photo">
         </div>
         <h3 class="main__index-feedback-flex-info-name main-career__team__name">
             Имя Фамилия
@@ -538,40 +543,40 @@
             </h2>
             <div class="main-career__partners__gallery">
                 <a href="#" class="main-career__partners__item">
-                    <picture><source srcset="./img/par-icon-1.webp" type="image/webp"><img src="./img/par-icon-1.png" alt="partner logo"></picture>
+                    <img src="./img/par-icon-1.png" alt="partner logo">
                 </a>
                 <a href="#" class="main-career__partners__item">
-                    <picture><source srcset="./img/par-icon-2.webp" type="image/webp"><img src="./img/par-icon-2.png" alt="partner logo"></picture>
+                    <img src="./img/par-icon-2.png" alt="partner logo">
                 </a>
                 <a href="#" class="main-career__partners__item">
-                    <picture><source srcset="./img/par-icon-3.webp" type="image/webp"><img src="./img/par-icon-3.png" alt="partner logo"></picture>
+                    <img src="./img/par-icon-3.png" alt="partner logo">
                 </a>
                 <a href="#" class="main-career__partners__item">
-                    <picture><source srcset="./img/par-icon-4.webp" type="image/webp"><img src="./img/par-icon-4.png" alt="partner logo"></picture>
+                    <img src="./img/par-icon-4.png" alt="partner logo">
                 </a>
                 <a href="#" class="main-career__partners__item">
-                    <picture><source srcset="./img/par-icon-2.webp" type="image/webp"><img src="./img/par-icon-2.png" alt="partner logo"></picture>
+                    <img src="./img/par-icon-2.png" alt="partner logo">
                 </a>
                 <a href="#" class="main-career__partners__item">
-                    <picture><source srcset="./img/par-icon-3.webp" type="image/webp"><img src="./img/par-icon-3.png" alt="partner logo"></picture>
+                    <img src="./img/par-icon-3.png" alt="partner logo">
                 </a>
                 <a href="#" class="main-career__partners__item">
-                    <picture><source srcset="./img/par-icon-4.webp" type="image/webp"><img src="./img/par-icon-4.png" alt="partner logo"></picture>
+                    <img src="./img/par-icon-4.png" alt="partner logo">
                 </a>
                 <a href="#" class="main-career__partners__item">
-                    <picture><source srcset="./img/par-icon-3.webp" type="image/webp"><img src="./img/par-icon-3.png" alt="partner logo"></picture>
+                    <img src="./img/par-icon-3.png" alt="partner logo">
                 </a>
                 <a href="#" class="main-career__partners__item">
-                    <picture><source srcset="./img/par-icon-1.webp" type="image/webp"><img src="./img/par-icon-1.png" alt="partner logo"></picture>
+                    <img src="./img/par-icon-1.png" alt="partner logo">
                 </a>
                 <a href="#" class="main-career__partners__item">
-                    <picture><source srcset="./img/par-icon-2.webp" type="image/webp"><img src="./img/par-icon-2.png" alt="partner logo"></picture>
+                    <img src="./img/par-icon-2.png" alt="partner logo">
                 </a>
                 <a href="#" class="main-career__partners__item">
-                    <picture><source srcset="./img/par-icon-4.webp" type="image/webp"><img src="./img/par-icon-4.png" alt="partner logo"></picture>
+                    <img src="./img/par-icon-4.png" alt="partner logo">
                 </a>
                 <a href="#" class="main-career__partners__item">
-                    <picture><source srcset="./img/par-icon-1.webp" type="image/webp"><img src="./img/par-icon-1.png" alt="partner logo"></picture>
+                    <img src="./img/par-icon-1.png" alt="partner logo">
                 </a>
             </div>
         </section>
@@ -581,25 +586,25 @@
             </h3>
             <div class="main-career__choice__options">
                 <div class="main-career__choice__item blue">
-                    <picture><source srcset="./img/choice-1.webp" type="image/webp"><img src="./img/choice-1.png" alt="icon for choice item"></picture>
+                    <img src="./img/choice-1.png" alt="icon for choice item">
                     <p class="main-career__choice__text">
                         Я хочу, чтобы мой ребенок был успешным
                     </p>
                 </div>
                 <div class="main-career__choice__item yellow">
-                    <picture><source srcset="./img/choice-2.webp" type="image/webp"><img src="./img/choice-2.png" alt="icon for choice item"></picture>
+                    <img src="./img/choice-2.png" alt="icon for choice item">
                     <p class="main-career__choice__text">
                         Я хочу больше зарабатывать
                     </p>
                 </div>
                 <div class="main-career__choice__item purple">
-                    <picture><source srcset="./img/choice-3.webp" type="image/webp"><img src="./img/choice-3.png" alt="icon for choice item"></picture>
+                    <img src="./img/choice-3.png" alt="icon for choice item">
                     <p class="main-career__choice__text">
                         Мой ребенок не выпускает гаджет из рук
                     </p>
                 </div>
                 <div class="main-career__choice__item green">
-                    <picture><source srcset="./img/choice-4.webp" type="image/webp"><img src="./img/choice-4.png" alt="icon for choice item"></picture>
+                    <img src="./img/choice-4.png" alt="icon for choice item">
                     <p class="main-career__choice__text">
                         Я хочу стать айтишником
                     </p>
@@ -614,7 +619,7 @@
 
             <div class="main__index-help-message">
                 <div class="main__index-help-image">
-                    <picture><source srcset="img/owl-index.webp" type="image/webp"><img src="img/owl-index.png" alt="image owl" ></picture>
+                    <img src="img/owl-index.png" alt="image owl" >
                 </div>
                 <div class="main__index-help-sub">
                     <svg xmlns="http://www.w3.org/2000/svg" width="420" height="192" viewBox="0 0 420 192" preserveAspectRatio="none" fill="none">
@@ -704,19 +709,19 @@
                 </a>
                 <div class="footer__container-item-social">
                     <a href="" class="footer__container-item-social-icon">
-                        <picture><source srcset="img/vk.webp" type="image/webp"><img src="img/vk.png" alt="social icon"></picture>
+                        <img src="img/vk.png" alt="social icon">
                     </a>
                     <a href="" class="footer__container-item-social-icon">
-                        <picture><source srcset="img/insta.webp" type="image/webp"><img src="img/insta.png" alt="social icon"></picture>
+                        <img src="img/insta.png" alt="social icon">
                     </a>
                     <a href="" class="footer__container-item-social-icon">
-                        <picture><source srcset="img/fb.webp" type="image/webp"><img src="img/fb.png" alt="social icon"></picture>
+                        <img src="img/fb.png" alt="social icon">
                     </a>
                     <a href="" class="footer__container-item-social-icon">
-                        <picture><source srcset="img/youtube.webp" type="image/webp"><img src="img/youtube.png" alt="social icon"></picture>
+                        <img src="img/youtube.png" alt="social icon">
                     </a>
                     <a href="" class="footer__container-item-social-icon">
-                        <picture><source srcset="img/telegram.webp" type="image/webp"><img src="img/telegram.png" alt="social icon"></picture>
+                        <img src="img/telegram.png" alt="social icon">
                     </a>
                 </div>
                 <p class="footer__container-item-copyright">
@@ -914,11 +919,11 @@
             <li class="burger-email"><a href="mailto:info@hodfutureacademy.ru">info@hodfutureacademy.ru</a></li>
         </ul>
         <div class="burger__list-social">
-            <picture><source srcset="./img/burger-vk.webp" type="image/webp"><img src="./img/burger-vk.png" alt="vk icon"></picture>
-            <picture><source srcset="./img/burger-insta.webp" type="image/webp"><img src="./img/burger-insta.png" alt="insta icon"></picture>
-            <picture><source srcset="./img/burger-fb.webp" type="image/webp"><img src="./img/burger-fb.png" alt="fb icon"></picture>
-            <picture><source srcset="./img/burger-youtube.webp" type="image/webp"><img src="./img/burger-youtube.png" alt="youtube icon"></picture>
-            <picture><source srcset="./img/burger-telegram.webp" type="image/webp"><img src="./img/burger-telegram.png" alt="telegram icon"></picture>
+            <img src="./img/burger-vk.png" alt="vk icon">
+            <img src="./img/burger-insta.png" alt="insta icon">
+            <img src="./img/burger-fb.png" alt="fb icon">
+            <img src="./img/burger-youtube.png" alt="youtube icon">
+            <img src="./img/burger-telegram.png" alt="telegram icon">
         </div>
         <div>
             <a href="">

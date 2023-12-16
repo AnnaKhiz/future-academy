@@ -2,32 +2,63 @@
 @import "mixins"
 
 .main-career
+  overflow: hidden
   &__banner
     position: relative
     background-color: $color-dark-blue
+    @media screen and (max-width: 1060px)
+      padding-bottom: 23px
+  &__photo
+    @media screen and (max-width: 1060px)
+      width: 110%
+    & img
+      width: 100%
   &__title
     @include text-parameters (700, 2.62rem, 3.19rem, $color-white)
     max-width: 400px
     margin-bottom: 6px
     overflow: hidden
+    @media screen and (max-width: 530px)
+      font-size: 1.5rem
+      line-height: 1.8125rem
   &__description
     @include text-parameters (500, 1rem, 1.25rem, $color-white)
     max-width: 640px
     margin-bottom: 51px
     overflow: hidden
+    @media screen and (max-width: 530px)
+      font-size: 0.875rem
+      line-height: 1.0625rem
   &__details-block
     display: flex
     justify-content: flex-start
     align-items: start
     column-gap: 30px
     margin-bottom: 35px
+    @media screen and (max-width: 530px)
+      display: block
     &__description
       @include text-parameters (500, 0.88rem, 1.06rem, $color-white)
       position: relative
+      @media screen and (max-width: 530px)
+        font-size: 0.875rem
+        line-height: 1.0625rem
+      &:not(.second)
+        @media screen and (max-width: 530px)
+          margin-bottom: 36px
+      &.second
+        @media screen and (max-width: 530px)
+          margin-bottom: 48px
       &:before
         @include line-gradient-pseudo (unset, 0, 100px)
         top: -7px
         height: 2px
+      @media screen and (max-width: 530px)
+        &:before
+          width: 30%
+      @media screen and (max-width: 420px)
+        &:before
+          width: 40%
   &__price, &__sale
     @include text-parameters (700, 1.75rem, 2.13rem, $color-white)
     max-width: 515px
@@ -41,6 +72,9 @@
       height: 2px
   &__sale
     margin-bottom: 14px
+    @media screen and (max-width: 530px)
+      font-size: 1.5rem
+      line-height: 1.8125rem
   &__button
     @include button-orange
   &__icon
@@ -48,31 +82,157 @@
     &.icon-1
       top: 10%
       left: 10%
+      @media screen and (max-width: 1830px)
+        left: 7%
+      @media screen and (max-width: 1690px)
+        left: 4%
+      @media screen and (max-width: 1580px)
+        left: 1%
+      @media screen and (max-width: 1480px)
+        left: -3%
+      @media screen and (max-width: 1380px)
+        left: -6%
+      @media screen and (max-width: 1300px)
+        display: none
+      @media screen and (max-width: 1060px)
+        display: block
+        left: 15%
+      @media screen and (max-width: 630px)
+        top: 5%
+      @media screen and (max-width: 500px)
+        top: 2%
+        left: 12%
+      @media screen and (max-width: 430px)
+        left: 25%
+        top: 5%
+        width: 44px
+        height: auto
     &.icon-2
       bottom: -9%
       left: 6%
+      @media screen and (max-width: 1690px)
+        left: 2%
+      @media screen and (max-width: 1580px)
+        left: -1%
+      @media screen and (max-width: 1480px)
+        left: -4%
+      @media screen and (max-width: 1380px)
+        left: -7%
+      @media screen and (max-width: 1300px)
+        display: none
     &.icon-3
       top: 36%
       left: 41%
+      @media screen and (max-width: 1770px)
+        left: 38%
+      @media screen and (max-width: 1570px)
+        left: 35%
+      @media screen and (max-width: 1400px)
+        left: 31%
+      @media screen and (max-width: 1100px)
+        left: 33%
+      @media screen and (max-width: 1060px)
+        display: none
     &.icon-4
       bottom: -9%
       left: 35%
+      @media screen and (max-width: 1770px)
+        left: 33%
+      @media screen and (max-width: 1570px)
+        left: 31%
+      @media screen and (max-width: 1400px)
+        left: 29%
+      @media screen and (max-width: 1100px)
+        left: 31%
+      @media screen and (max-width: 1060px)
+        display: none
     &.icon-5
       top: 5%
       right: 36%
+      @media screen and (max-width: 1230px)
+        right: 33%
+      @media screen and (max-width: 1060px)
+        bottom: 44%
+        left: 7%
+        top: unset
+        right: unset
+      @media screen and (max-width: 860px)
+        bottom: 49%
+      @media screen and (max-width: 730px)
+        bottom: 54%
+      @media screen and (max-width: 595px)
+        bottom: 60%
+      @media screen and (max-width: 500px)
+        bottom: 65%
+        width: 70px
+        height: auto
+      @media screen and (max-width: 430px)
+        bottom: unset
+        top: 23%
+        left: 5%
+      @media screen and (max-width: 350px)
+        top: 19%
+        left: 3%
+
+
     &.icon-6
       bottom: 10%
       right: 38%
+      @media screen and (max-width: 1730px)
+        right: 35%
+      @media screen and (max-width: 1330px)
+        right: 33%
+      @media screen and (max-width: 1230px)
+        right: 31%
+      @media screen and (max-width: 1170px)
+        bottom: 31%
+        right: 3%
+      @media screen and (max-width: 1060px)
+        bottom: 52%
+      @media screen and (max-width: 730px)
+        bottom: 59%
+      @media screen and (max-width: 595px)
+        bottom: 61%
+      @media screen and (max-width: 500px)
+        bottom: 67%
+      @media screen and (max-width: 430px)
+        bottom: unset
+        top: 15%
+        right: -10%
+        width: 96px
+        height: auto
+
     &.icon-7
       top: 27%
       right: 20%
+      @media screen and (max-width: 1750px)
+        right: 17%
+      @media screen and (max-width: 1600px)
+        right: 15%
+      @media screen and (max-width: 1490px)
+        right: 12%
+      @media screen and (max-width: 1370px)
+        display: none
     &.icon-8
       top: 10%
       right: 6%
+      @media screen and (max-width: 1750px)
+        right: 3%
+      @media screen and (max-width: 1600px)
+        right: 1%
+        top: 37%
+      @media screen and (max-width: 1170px)
+        display: none
     &.icon-9
       right: 5%
       bottom: -5%
+      @media screen and (max-width: 1600px)
+        right: -1%
+        bottom: -15%
+      @media screen and (max-width: 1060px)
+        display: none
   &__info
+
     padding: 80px 0 142px 0
     &__container
       column-gap: 50px
