@@ -234,18 +234,69 @@
   &__info
 
     padding: 80px 0 142px 0
+    @media screen and (max-width: 930px)
+      padding-top: 40px
+    @media screen and (max-width: 860px)
+      padding-bottom: 40px
     &__container
       column-gap: 50px
-      &__item.owl:before
-        bottom: -90%
+
+      &__item.owl
+        &:before
+          bottom: -90%
+          @media screen and (max-width: 1045px)
+            left: -21%
+          @media screen and (max-width: 960px)
+            left: -26%
+          @media screen and (max-width: 768px)
+            left: 10%
+          @media screen and (max-width: 590px)
+            left: 5%
+          @media screen and (max-width: 515px)
+            left: 1%
+          @media screen and (max-width: 450px)
+            left: -4%
+            bottom: -80%
+          @media screen and (max-width: 400px)
+            left: -20%
+        & > .owl-text > .owl-desc
+          @media screen and (max-width: 1045px)
+            line-height: 1.1rem
+          @media screen and (max-width: 950px)
+            font-size: 0.9rem
+          @media screen and (max-width: 930px)
+            font-size: 1rem
+            line-height: 1.5rem
+          @media screen and (max-width: 768px)
+            font-size: 1.5rem
+            line-height: 1.8rem
+          @media screen and (max-width: 430px)
+            font-size: 1.3rem
+            line-height: 1.5rem
+          @media screen and (max-width: 365px)
+            font-size: 1.2rem
+            line-height: 1.3rem
     &__preferences
       display: flex
       justify-content: flex-start
       align-items: start
       column-gap: 21px
       padding-top: 37px
-      &__item img
-        margin-bottom: 18px
+      @media screen and (max-width: 930px)
+        justify-content: space-between
+        flex-wrap: wrap
+        padding-top: 0
+      @media screen and (max-width: 825px)
+        justify-content: center
+        row-gap: 21px
+      @media screen and (max-width: 465px)
+        padding-top: 40px
+
+      &__item
+        @media screen and (max-width: 550px)
+          width: 100%
+        & img
+          margin-bottom: 18px
       &__title
         @include text-parameters(700, 1.5rem, 1.81rem, $color-black)
         margin-bottom: 14px
@@ -254,6 +305,8 @@
         @include text-parameters(400, 0.88rem, 1.06rem, $color-black)
         max-width: 250px
         overflow: hidden
+        @media screen and (max-width: 550px)
+          max-width: 100%
   &__video
     padding-bottom: 216px
   &__owner
