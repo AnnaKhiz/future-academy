@@ -4693,6 +4693,7 @@ ul {
 .main-career__owner__text.gray-text {
   font-size: 0.875rem;
   color: #4F4F4F;
+  margin-bottom: 0;
 }
 @media screen and (max-width: 400px) {
   .main-career__owner__text.gray-text {
@@ -4707,6 +4708,11 @@ ul {
 .main-career__values {
   padding-bottom: 74px;
 }
+@media screen and (max-width: 950px) {
+  .main-career__values {
+    padding-bottom: 40px;
+  }
+}
 .main-career__values__title {
   font-weight: 700;
   font-style: normal;
@@ -4716,11 +4722,34 @@ ul {
   color: #000000;
   margin-bottom: 53px;
 }
+@media screen and (max-width: 490px) {
+  .main-career__values__title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .main-career__values__title {
+    font-size: 1.5rem;
+  }
+}
 .main-career__values__container {
   display: flex;
   justify-content: flex-start;
   align-items: start;
   column-gap: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .main-career__values__container {
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .main-career__values__container {
+    display: block;
+    text-align: center;
+  }
 }
 .main-career__values__image {
   margin-bottom: 25px;
@@ -4734,6 +4763,22 @@ ul {
   color: #000000;
   max-width: 220px;
   overflow: hidden;
+}
+@media screen and (max-width: 490px) {
+  .main-career__values__description {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .main-career__values__description {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+  }
+}
+@media screen and (max-width: 490px) {
+  .main-career__values__item:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
 }
 .main-career__team {
   position: relative;

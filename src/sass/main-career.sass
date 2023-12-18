@@ -353,6 +353,7 @@
       &.gray-text
         font-size: 0.875rem
         color: $color-dark-grey
+        margin-bottom: 0
         @media screen and (max-width: 400px)
           font-size: 0.75rem
       @media screen and (max-width: 400px)
@@ -360,20 +361,41 @@
 
   &__values
     padding-bottom: 74px
+    @media screen and (max-width: 950px)
+      padding-bottom: 40px
     &__title
       @include text-parameters(700, 2.25rem, 2.125rem, $color-black)
       margin-bottom: 53px
+      @media screen and (max-width: 490px)
+        text-align: center
+        margin-bottom: 40px
+      @media screen and (max-width: 400px)
+        font-size: 1.5rem
     &__container
       display: flex
       justify-content: flex-start
       align-items: start
       column-gap: 20px
+      @media screen and (max-width: 1200px)
+        flex-wrap: wrap
+        row-gap: 20px
+      @media screen and (max-width: 490px)
+        display: block
+        text-align: center
     &__image
       margin-bottom: 25px
     &__description
       @include text-parameters(500, 1rem, 1.5rem, $color-black)
       max-width: 220px
       overflow: hidden
+      @media screen and (max-width: 490px)
+        max-width: 100%
+      @media screen and (max-width: 400px)
+        font-size: 0.75rem
+        line-height: 1.125rem
+    &__item:not(:last-of-type)
+      @media screen and (max-width: 490px)
+        margin-bottom: 20px
 
   &__team
     position: relative
