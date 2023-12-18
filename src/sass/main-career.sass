@@ -2,7 +2,7 @@
 @import "mixins"
 
 .main-career
-  overflow: hidden
+
   &__banner
     position: relative
     background-color: $color-dark-blue
@@ -513,14 +513,21 @@
 
   &__choice
     margin-bottom: 330px
+    @media screen and (max-width: 1240px)
+      margin-bottom: 40px
     &__label
       @include text-parameters (700, 2.25rem, 2.125rem, $color-black)
       margin-bottom: 40px
+      @media screen and (max-width: 560px)
+        text-align: center
+        font-size: 1.5rem
     &__options
       display: flex
       justify-content: space-between
       align-items: center
       gap: 20px
+      @media screen and (max-width: 1200px)
+        flex-wrap: wrap
     &__item
       @include colored-shadow
       position: relative
@@ -529,6 +536,11 @@
       border-radius: 20px
       text-align: center
       cursor: pointer
+      @media screen and (max-width: 1200px)
+        width: 48%
+      @media screen and (max-width: 560px)
+        width: 100%
+        padding: 10px
       & img
         margin-bottom: 18px
       &.blue
@@ -544,4 +556,7 @@
       text-align: center
       min-height: 60px
       overflow: hidden
+      @media screen and (max-width: 560px)
+        font-size: 0.75rem
+        line-height: 1.125rem
 
