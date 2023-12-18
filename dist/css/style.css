@@ -2879,7 +2879,7 @@ ul {
           column-gap: 50px;
 }
 
-.main-career__info__container__item.owl:before {
+.main-career__info__container__item.owl.career:before {
   bottom: -90%;
 }
 
@@ -4286,14 +4286,14 @@ body {
        -moz-column-gap: 80px;
             column-gap: 80px;
   }
+
+  .main-career__info__container__item.owl.career:before {
+    left: -26%;
+  }
 }
 
 @media screen and (max-width: 1045px) {
-  .main-career__info__container__item.owl:before {
-    left: -21%;
-  }
-
-  .main-career__info__container__item.owl > .owl-text > .owl-desc {
+  .main-career__info__container__item.owl.career > .owl-text > .owl-desc {
     line-height: 1.1rem;
   }
 }
@@ -4349,6 +4349,12 @@ body {
   }
 }
 
+@media screen and (max-width: 990px) {
+  .main-career__info__container__item.owl.career:before {
+    left: -24%;
+  }
+}
+
 @media screen and (max-width: 980px) {
   .main__index-professions-container-item.owl:before {
     left: -17%;
@@ -4384,12 +4390,6 @@ body {
 
   .main__index-help-container-form {
     width: 100%;
-  }
-}
-
-@media screen and (max-width: 960px) {
-  .main-career__info__container__item.owl:before {
-    left: -26%;
   }
 }
 
@@ -4512,7 +4512,7 @@ body {
     max-width: 40%;
   }
 
-  .main-career__info__container__item.owl > .owl-text > .owl-desc {
+  .main-career__info__container__item.owl.career > .owl-text > .owl-desc {
     font-size: 0.9rem;
   }
 
@@ -4608,7 +4608,11 @@ body {
     padding-top: 40px;
   }
 
-  .main-career__info__container__item.owl > .owl-text > .owl-desc {
+  .main-career__info__container__item.owl.career:before {
+    left: -4%;
+  }
+
+  .main-career__info__container__item.owl.career > .owl-text > .owl-desc {
     font-size: 1rem;
     line-height: 1.5rem;
   }
@@ -4754,6 +4758,10 @@ body {
 
   .main-courses__aside__range.noUi-horizontal {
     width: 80%;
+  }
+
+  .main-career__info__container__item.owl.career:before {
+    left: -10%;
   }
 }
 
@@ -4922,11 +4930,11 @@ body {
     margin-bottom: 20px;
   }
 
-  .main-career__info__container__item.owl:before {
+  .main-career__info__container__item.owl.career:before {
     left: 10%;
   }
 
-  .main-career__info__container__item.owl > .owl-text > .owl-desc {
+  .main-career__info__container__item.owl.career > .owl-text > .owl-desc {
     font-size: 1.5rem;
     line-height: 1.8rem;
   }
@@ -5110,7 +5118,7 @@ body {
     left: -12%;
   }
 
-  .main-career__info__container__item.owl:before {
+  .main-career__info__container__item.owl.career:before {
     left: 5%;
   }
 }
@@ -5365,7 +5373,7 @@ body {
 }
 
 @media screen and (max-width: 515px) {
-  .main-career__info__container__item.owl:before {
+  .main-career__info__container__item.owl.career:before {
     left: 1%;
   }
 }
@@ -5548,7 +5556,7 @@ body {
     min-height: 710px;
   }
 
-  .main-career__info__container__item.owl:before {
+  .main-career__info__container__item.owl.career:before {
     left: -4%;
     bottom: -80%;
   }
@@ -5617,7 +5625,7 @@ body {
     height: auto;
   }
 
-  .main-career__info__container__item.owl > .owl-text > .owl-desc {
+  .main-career__info__container__item.owl.career > .owl-text > .owl-desc {
     font-size: 1.3rem;
     line-height: 1.5rem;
   }
@@ -5748,7 +5756,7 @@ body {
     line-height: 0.9375rem;
   }
 
-  .main-career__info__container__item.owl:before {
+  .main-career__info__container__item.owl.career:before {
     left: -20%;
   }
 
@@ -5820,7 +5828,7 @@ body {
 }
 
 @media screen and (max-width: 365px) {
-  .main-career__info__container__item.owl > .owl-text > .owl-desc {
+  .main-career__info__container__item.owl.career > .owl-text > .owl-desc {
     font-size: 1.2rem;
     line-height: 1.3rem;
   }

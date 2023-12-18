@@ -241,13 +241,17 @@
     &__container
       column-gap: 50px
 
-      &__item.owl
+      &__item.owl.career
         &:before
           bottom: -90%
-          @media screen and (max-width: 1045px)
-            left: -21%
-          @media screen and (max-width: 960px)
+          @media screen and (max-width: 1050px)
             left: -26%
+          @media screen and (max-width: 990px)
+            left: -24%
+          @media screen and (max-width: 930px)
+            left: -4%
+          @media screen and (max-width: 800px)
+            left: -10%
           @media screen and (max-width: 768px)
             left: 10%
           @media screen and (max-width: 590px)
@@ -259,6 +263,7 @@
             bottom: -80%
           @media screen and (max-width: 400px)
             left: -20%
+
         & > .owl-text > .owl-desc
           @media screen and (max-width: 1045px)
             line-height: 1.1rem
