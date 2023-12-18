@@ -400,6 +400,13 @@
   &__team
     position: relative
     margin-bottom: 74px
+    @media screen and (max-width: 950px)
+      margin-bottom: 40px
+    &:before
+      @media screen and (max-width: 1450px)
+        min-height: 570px
+      @media screen and (max-width: 1000px)
+        min-height: 560px
     &__image
       margin-bottom: 25px
       text-align: center
@@ -410,17 +417,26 @@
       text-align: center
   &__programs
     padding-bottom: 104px
+    @media screen and (max-width: 1200px)
+      padding-bottom: 40px
     &__info
       margin-bottom: 57px
+      @media screen and (max-width: 1200px)
+        margin-bottom: 40px
     &__label
       @include text-parameters (700, 2.25rem, 2.125rem, $color-black)
       margin-bottom: 40px
+      @media screen and (max-width: 600px)
+        font-size: 1.5rem
+        text-align: center
     &__benefits
       display: flex
       justify-content: flex-start
       align-items: start
       column-gap: 20px
-      row-gap: 20px
+      row-gap: 40px
+      @media screen and (max-width: 1200px)
+        flex-wrap: wrap
     &__item
       @include text-parameters (500, 1rem, 1.5rem, $color-black)
       position: relative
@@ -429,6 +445,16 @@
         @include line-gradient-pseudo (unset, 0, 100px)
         top: -13px
         height: 2px
+      @media screen and (max-width: 1200px)
+        width: 30%
+      @media screen and (max-width: 768px)
+        width: 48%
+      @media screen and (max-width: 600px)
+        width: 100%
+        text-align: center
+    &__statistic
+      @media screen and (max-width: 930px)
+        text-align: center
   &__partners
     padding-bottom: 74px
     &__label

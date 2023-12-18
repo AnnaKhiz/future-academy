@@ -4784,6 +4784,21 @@ ul {
   position: relative;
   margin-bottom: 74px;
 }
+@media screen and (max-width: 950px) {
+  .main-career__team {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .main-career__team:before {
+    min-height: 570px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .main-career__team:before {
+    min-height: 560px;
+  }
+}
 .main-career__team__image {
   margin-bottom: 25px;
   text-align: center;
@@ -4798,8 +4813,18 @@ ul {
 .main-career__programs {
   padding-bottom: 104px;
 }
+@media screen and (max-width: 1200px) {
+  .main-career__programs {
+    padding-bottom: 40px;
+  }
+}
 .main-career__programs__info {
   margin-bottom: 57px;
+}
+@media screen and (max-width: 1200px) {
+  .main-career__programs__info {
+    margin-bottom: 40px;
+  }
 }
 .main-career__programs__label {
   font-weight: 700;
@@ -4810,12 +4835,23 @@ ul {
   color: #000000;
   margin-bottom: 40px;
 }
+@media screen and (max-width: 600px) {
+  .main-career__programs__label {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
 .main-career__programs__benefits {
   display: flex;
   justify-content: flex-start;
   align-items: start;
   column-gap: 20px;
-  row-gap: 20px;
+  row-gap: 40px;
+}
+@media screen and (max-width: 1200px) {
+  .main-career__programs__benefits {
+    flex-wrap: wrap;
+  }
 }
 .main-career__programs__item {
   font-weight: 500;
@@ -4842,6 +4878,27 @@ ul {
 @media screen and (max-width: 1080px) {
   .main-career__programs__item:before {
     bottom: -7px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .main-career__programs__item {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-career__programs__item {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main-career__programs__item {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 930px) {
+  .main-career__programs__statistic {
+    text-align: center;
   }
 }
 .main-career__partners {
